@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Festival della Pallamano 2026 · Programma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF1F5; --panel:#FFFFFF; --ink:#16233A; --muted:#6B7789;
+    --line:#E2E6EC; --line-strong:#CFD6E0;
+    --fondi:#E8590C; --fondi-tint:#FFF1E6;
+    --u14m:#1D4ED8; --u14m-t:#E7EDFD;
+    --u14f:#BE185D; --u14f-t:#FBE8F1;
+    --u13:#0F766E;  --u13-t:#E1F1EF;
+    --u911:#6D28D9; --u911-t:#EEE7FB;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;line-height:1.4;
+    padding:20px 16px 60px;
+  }
+  .wrap{max-width:1400px;margin:0 auto}
+
+  header.top{margin-bottom:18px}
+  .eyebrow{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    font-size:13px;margin:0 0 2px;
+  }
+  h1{
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;
+    font-size:clamp(30px,6vw,52px);line-height:.95;margin:0;letter-spacing:.01em;
+  }
+  .sub{color:var(--muted);font-size:14px;margin-top:6px}
+  .sub b{color:var(--ink);font-weight:600}
+
+  .controls{
+    display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+    margin:18px 0 14px;
+  }
+  .chip{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;
+    font-size:15px;letter-spacing:.03em;text-transform:uppercase;
+    border:1.5px solid var(--line-strong);background:var(--panel);color:var(--ink);
+    padding:6px 12px;border-radius:999px;cursor:pointer;user-select:none;
+    display:inline-flex;align-items:center;gap:7px;transition:all .12s ease;
+  }
+  .chip .dot{width:10px;height:10px;border-radius:3px;flex:0 0 auto}
+  .chip[aria-pressed="false"]{opacity:.4}
+  .chip[aria-pressed="false"] .dot{opacity:.5}
+  .chip:hover{border-color:var(--ink)}
+  .chip.fondi{border-color:var(--fondi);color:var(--fondi)}
+  .chip.fondi[aria-pressed="true"]{background:var(--fondi);color:#fff}
+  .sep{flex:1 1 auto;min-width:8px}
+
+  .board{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    overflow:auto;box-shadow:0 1px 3px rgba(20,35,58,.06);
+    max-height:82vh;
+  }
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:900px}
+  thead th{
+    position:sticky;top:0;z-index:3;background:var(--ink);color:#fff;
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;
+    text-transform:uppercase;letter-spacing:.05em;
+    padding:10px 10px;text-align:left;font-size:16px;white-space:nowrap;
+  }
+  thead th .dow{display:block;font-size:11px;opacity:.7;letter-spacing:.12em}
+  thead th:first-child{left:0;z-index:4;width:64px;min-width:64px}
+  tbody th.time{
+    position:sticky;left:0;z-index:2;background:var(--panel);
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:18px;
+    color:var(--ink);text-align:center;vertical-align:top;
+    padding:8px 6px;border-right:2px solid var(--line-strong);
+    border-top:1px solid var(--line);width:64px;min-width:64px;
+  }
+  tbody td{
+    border-top:1px solid var(--line);border-right:1px solid var(--line);
+    vertical-align:top;padding:6px;min-width:190px;
+  }
+  tbody tr:nth-child(even) th.time{background:#FAFBFC}
+  tbody tr:nth-child(even) td{background:#FAFBFC}
+
+  .m{
+    border:1px solid var(--line-strong);border-radius:8px;
+    padding:6px 8px;margin-bottom:6px;background:#fff;
+    border-left-width:4px;
+  }
+  .m:last-child{margin-bottom:0}
+  .m .cat{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:12px;
+    letter-spacing:.05em;text-transform:uppercase;
+    display:inline-block;padding:1px 7px;border-radius:5px;margin-bottom:3px;
+  }
+  .m .teams{font-size:13.5px;font-weight:500}
+  .m .teams .fp{font-weight:700;color:var(--fondi)}
+  .m .venue{font-size:11px;color:var(--muted);margin-top:2px}
+
+  /* category theming */
+  .m.u14m{border-left-color:var(--u14m)} .m.u14m .cat{background:var(--u14m-t);color:var(--u14m)}
+  .m.u14f{border-left-color:var(--u14f)} .m.u14f .cat{background:var(--u14f-t);color:var(--u14f)}
+  .m.u13 {border-left-color:var(--u13)}  .m.u13  .cat{background:var(--u13-t); color:var(--u13)}
+  .m.u911{border-left-color:var(--u911)} .m.u911 .cat{background:var(--u911-t);color:var(--u911)}
+
+  /* Fondi highlight — the signature */
+  .m.fondi{
+    background:var(--fondi-tint);border-color:var(--fondi);border-left-color:var(--fondi);
+    box-shadow:0 0 0 1px var(--fondi) inset;
+  }
+  .m.fondi .cat{background:var(--fondi);color:#fff}
+
+  /* evidenzia (dim) le non-Fondi quando non le nascondiamo */
+  .m.dim{opacity:.14;filter:grayscale(1)}
+
+  .empty{color:var(--line-strong);font-size:12px;text-align:center;padding-top:6px}
+
+  footer{margin-top:16px;color:var(--muted);font-size:12px}
+  footer a{color:var(--fondi)}
+  @media (max-width:600px){
+    tbody td{min-width:160px}
+    .m .teams{font-size:12.5px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow" id="ev-eyebrow">FIGH Finals</p>
+    <h1 id="ev-title">Festival della Pallamano</h1>
+    <p class="sub" id="ev-sub">Caricamento…</p>
+  </header>
+
+  <div class="controls" id="controls"></div>
+
+  <div class="board">
+    <table id="grid"></table>
+  </div>
+
+  <footer id="ev-foot">
+    Dati da federhandball.it.
+  </footer>
+</div>
+
+<script>
+// ==========================================================================
+//  I dati NON sono più qui dentro: vengono caricati da "calendario.json"
+//  che deve stare nella STESSA cartella di questa pagina.
+//  Per aggiornare il calendario in futuro basta modificare quel file JSON.
+// ==========================================================================
+
+let V={}, CAT={}, DAYS=[], DOW={}, FONDI="Fondi", D=[], TIMES=[];
+const state = { onlyFondi:true, hide:true, cats:{} };
+
+const toMin = t => { const [a,b]=t.split("."); return (+a)*60+(+b); };
+const isFondi = m => m.home===FONDI || m.away===FONDI;
+const shown = el => el.style.display !== "none";
+
+function teamHTML(name){
+  return name===FONDI ? `<span class="fp">${name}</span>` : name;
+}
+function matchHTML(m){
+  const f = isFondi(m) ? " fondi" : "";
+  return `<div class="m ${m.cat}${f}" data-cat="${m.cat}">
+    <span class="cat">${CAT[m.cat]||m.cat} · Gir. ${m.gir}</span>
+    <div class="teams">${teamHTML(m.home)} <span style="color:var(--muted)">–</span> ${teamHTML(m.away)}</div>
+    <div class="venue">${V[m.venue]||m.venue}</div>
+  </div>`;
+}
+
+function build(){
+  const t = document.getElementById("grid");
+  let head = "<thead><tr><th>Ora</th>";
+  DAYS.forEach(d=> head += `<th><span class="dow">${DOW[d]||""}</span>${d.replace("/07"," lug")}</th>`);
+  head += "</tr></thead>";
+
+  let body = "<tbody>";
+  TIMES.forEach(time=>{
+    body += `<tr><th class="time">${time}</th>`;
+    DAYS.forEach(day=>{
+      const cell = D.filter(m=>m.date===day && m.time===time);
+      body += `<td data-day="${day}">`;
+      if(cell.length){
+        cell.sort((x,y)=> (isFondi(y)-isFondi(x)) || x.cat.localeCompare(y.cat));
+        body += cell.map(matchHTML).join("");
+      } else {
+        body += '<div class="empty">·</div>';
+      }
+      body += "</td>";
+    });
+    body += "</tr>";
+  });
+  body += "</tbody>";
+  t.innerHTML = head + body;
+}
+
+function updateView(){
+  document.querySelectorAll(".m[data-cat]").forEach(el=>{
+    const catOn = state.cats[el.dataset.cat];
+    const fondi = el.classList.contains("fondi");
+    const unselected = state.onlyFondi && !fondi;
+    const visible = catOn && !(unselected && state.hide);
+    el.style.display = visible ? "" : "none";
+    el.classList.toggle("dim", visible && unselected && !state.hide);
+  });
+
+  const dayVis = {}; DAYS.forEach(d=> dayVis[d]=0);
+  document.querySelectorAll("#grid tbody tr").forEach(tr=>{
+    let rowVis = 0;
+    tr.querySelectorAll("td").forEach(td=>{
+      const n = [...td.querySelectorAll(".m")].filter(shown).length;
+      rowVis += n; dayVis[td.dataset.day] += n;
+    });
+    tr.style.display = rowVis ? "" : "none";
+  });
+  const heads = document.querySelectorAll("#grid thead th");
+  DAYS.forEach((d,i)=>{
+    const on = dayVis[d] > 0;
+    if(heads[i+1]) heads[i+1].style.display = on ? "" : "none";
+    document.querySelectorAll(`#grid td[data-day="${d}"]`).forEach(td=> td.style.display = on ? "" : "none");
+  });
+}
+
+function buildControls(){
+  const box = document.getElementById("controls");
+  let html = `<button class="chip fondi" data-role="onlyfondi" aria-pressed="${state.onlyFondi}">★ Solo Fondi</button>
+    <button class="chip" data-role="hide" aria-pressed="${state.hide}">⤢ Nascondi non selezionate</button>
+    <span class="sep"></span>`;
+  Object.keys(CAT).forEach(c=>{
+    html += `<button class="chip" data-cat="${c}" aria-pressed="true"><span class="dot" style="background:var(--${c})"></span>${CAT[c]}</button>`;
+  });
+  box.innerHTML = html;
+
+  box.addEventListener("click", e=>{
+    const btn = e.target.closest(".chip"); if(!btn) return;
+    const on = btn.getAttribute("aria-pressed")==="true";
+    btn.setAttribute("aria-pressed", String(!on));
+    if(btn.dataset.role==="onlyfondi")  state.onlyFondi = !on;
+    else if(btn.dataset.role==="hide")  state.hide      = !on;
+    else if(btn.dataset.cat)            state.cats[btn.dataset.cat] = !on;
+    updateView();
+  });
+}
+
+function applyMeta(ev){
+  if(!ev) return;
+  const set=(id,txt)=>{ const el=document.getElementById(id); if(el&&txt) el.textContent=txt; };
+  set("ev-eyebrow", ev.eyebrow);
+  set("ev-title", ev.title);
+  const sub=document.getElementById("ev-sub");
+  if(sub && ev.subtitle){
+    sub.innerHTML = `<b>${ev.subtitle}</b> — griglia per giorno (colonne) e orario (righe). Le partite del <b style="color:var(--fondi)">${FONDI}</b> sono evidenziate in arancione.`;
+  }
+  const foot=document.getElementById("ev-foot");
+  if(foot) foot.textContent = `Dati da ${ev.source||"federhandball.it"}${ev.updated?" (aggiornati al "+ev.updated+")":""}. I punteggi non sono inclusi.`;
+}
+
+async function init(){
+  try{
+    const res = await fetch("calendario.json", {cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const data = await res.json();
+
+    V     = data.venues     || {};
+    CAT   = data.categories || {};
+    DAYS  = data.days       || [];
+    DOW   = data.dow        || {};
+    FONDI = data.fondiTeam  || "Fondi";
+    D     = data.matches    || [];
+    Object.keys(CAT).forEach(c=> state.cats[c]=true);
+
+    TIMES = [...new Set(D.map(m=>m.time))].sort((a,b)=>toMin(a)-toMin(b));
+
+    applyMeta(data.event);
+    buildControls();
+    build();
+    updateView();
+  }catch(err){
+    document.querySelector(".board").innerHTML =
+      `<div style="padding:24px;color:var(--muted);font-size:14px;line-height:1.6">
+        <b style="color:var(--ink)">Impossibile caricare <code>calendario.json</code>.</b><br>
+        Verifica che il file <code>calendario.json</code> sia nella stessa cartella di questa pagina
+        e che la pagina sia aperta tramite un indirizzo <b>http/https</b> (es. GitHub Pages),
+        non aprendo il file direttamente dal disco.<br>
+        <span style="font-size:12px">Dettaglio: ${err.message}</span>
+      </div>`;
+  }
+}
+init();
+
+</script>
+</body>
+</html>
