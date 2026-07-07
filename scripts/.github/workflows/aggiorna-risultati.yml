@@ -1,1 +1,48 @@
 
+name: Aggiorna risultati
+
+# Quando eseguirlo
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # ogni 10 minuti (UTC). GitHub puo' ritardare l'avvio.
+  workflow_dispatch: {}       # permette l'avvio manuale dal tab "Actions"
+
+# Evita esecuzioni sovrapposte
+concurrency:
+  group: aggiorna-risultati
+  cancel-in-progress: false
+
+# Serve per poter fare commit del file aggiornato
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: pip install beautifulsoup4
+
+      - name: Genera risultati.json
+        run: python scripts/scrape_risultati.py
+
+      - name: Commit se ci sono cambiamenti
+        run: |
+          git config user.name  "risultati-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- risultati.json; then
+            echo "Nessun cambiamento nei risultati."
+          else
+            git add risultati.json
+            git commit -m "Aggiorna risultati [skip ci]"
+            git push
+            echo "risultati.json aggiornato e pubblicato."
+          fi
