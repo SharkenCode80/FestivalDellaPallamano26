@@ -1,0 +1,1822 @@
+{
+  "event": {
+    "title": "Festival della Pallamano 2026",
+    "eyebrow": "FIGH Finals · Riviera di Rimini & Pesaro",
+    "subtitle": "7 – 11 luglio · Misano · Riccione · Pesaro",
+    "source": "federhandball.it",
+    "updated": "07/07/2026"
+  },
+  "fondiTeam": "Fondi",
+  "days": [
+    "07/07",
+    "08/07",
+    "09/07",
+    "10/07",
+    "11/07"
+  ],
+  "dow": {
+    "07/07": "LUN",
+    "08/07": "MAR",
+    "09/07": "MER",
+    "10/07": "GIO",
+    "11/07": "VEN"
+  },
+  "categories": {
+    "u14m": "U14 M",
+    "u14f": "U14 F",
+    "u13": "U13",
+    "u911": "U9-11"
+  },
+  "venues": {
+    "npm": "Nuovo Pal. Misano",
+    "pm": "Palasport Misano",
+    "tm": "Tensostruttura Misano",
+    "pim": "Piastra Misano",
+    "pr": "Pattinodromo Riccione",
+    "pmp": "PalaMegabox Pesaro"
+  },
+  "matches": [
+    {
+      "date": "07/07",
+      "time": "17.00",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Ferrarin",
+      "away": "Crenna",
+      "venue": "npm"
+    },
+    {
+      "date": "07/07",
+      "time": "17.50",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Cassano Magnago",
+      "away": "Merano",
+      "venue": "npm"
+    },
+    {
+      "date": "07/07",
+      "time": "18.40",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Fondi",
+      "venue": "npm"
+    },
+    {
+      "date": "07/07",
+      "time": "17.00",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Rapid Nonantola",
+      "away": "Pressano",
+      "venue": "pm"
+    },
+    {
+      "date": "07/07",
+      "time": "17.50",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Verona City",
+      "away": "Camerano",
+      "venue": "pm"
+    },
+    {
+      "date": "07/07",
+      "time": "18.40",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Verdazzurro",
+      "away": "Imola",
+      "venue": "pm"
+    },
+    {
+      "date": "07/07",
+      "time": "17.00",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Conversano",
+      "away": "Vasto",
+      "venue": "pmp"
+    },
+    {
+      "date": "07/07",
+      "time": "17.50",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Albatro",
+      "away": "Malo",
+      "venue": "pmp"
+    },
+    {
+      "date": "07/07",
+      "time": "18.40",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Kaltern",
+      "away": "29 Martiri",
+      "venue": "pmp"
+    },
+    {
+      "date": "07/07",
+      "time": "17.00",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Olimpic Massa M.",
+      "away": "Avola",
+      "venue": "pr"
+    },
+    {
+      "date": "07/07",
+      "time": "17.50",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Putignano",
+      "away": "Aretusa",
+      "venue": "pr"
+    },
+    {
+      "date": "07/07",
+      "time": "18.40",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Cingoli",
+      "away": "Belluno",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Merano",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Crenna",
+      "away": "Cassano Magnago",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Ferrarin",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Camerano",
+      "away": "Verdazzurro",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Pressano",
+      "away": "Verona City",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Imola",
+      "away": "Rapid Nonantola",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Malo",
+      "away": "Kaltern",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Vasto",
+      "away": "Albatro",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "29 Martiri",
+      "away": "Conversano",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Aretusa",
+      "away": "Cingoli",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Avola",
+      "away": "Putignano",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Belluno",
+      "away": "Olimpic Massa M.",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Ferrarin",
+      "away": "Merano",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Cassano Magnago",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Crenna",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Rapid Nonantola",
+      "away": "Camerano",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Verdazzurro",
+      "away": "Verona City",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Imola",
+      "away": "Pressano",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Conversano",
+      "away": "Malo",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Kaltern",
+      "away": "Albatro",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "29 Martiri",
+      "away": "Vasto",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Olimpic Massa M.",
+      "away": "Aretusa",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Cingoli",
+      "away": "Putignano",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Belluno",
+      "away": "Avola",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Laugen",
+      "away": "Dossobuono",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Camerano",
+      "away": "Marsala",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Mestrino",
+      "away": "Cassano Magnago",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Spallanzani Casalgrande",
+      "away": "Fondi",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Cingoli",
+      "away": "Ariosto",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Brixen",
+      "away": "Montecarlo",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Leno",
+      "away": "Seiseralms",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Oderzo",
+      "away": "Sassari",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "17.30",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Marsala",
+      "away": "Laugen",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "18.30",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Dossobuono",
+      "away": "Camerano",
+      "venue": "pmp"
+    },
+    {
+      "date": "08/07",
+      "time": "17.30",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Mestrino",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "18.30",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Cassano Magnago",
+      "away": "Spallanzani Casalgrande",
+      "venue": "pr"
+    },
+    {
+      "date": "08/07",
+      "time": "17.30",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Montecarlo",
+      "away": "Cingoli",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "18.30",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Ariosto",
+      "away": "Brixen",
+      "venue": "npm"
+    },
+    {
+      "date": "08/07",
+      "time": "17.30",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Sassari",
+      "away": "Leno",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "18.30",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Seiseralms",
+      "away": "Oderzo",
+      "venue": "pm"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bozen",
+      "away": "Fondi",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "09.15",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Ferrara",
+      "away": "Chiaravalle",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "10.00",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bondone",
+      "away": "Vasto",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "10.45",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Pressano",
+      "away": "Romagna",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "11.30",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Scuola di Handball",
+      "away": "Petrarca",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "12.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Cingoli",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Chiaravalle",
+      "away": "Bozen",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "15.45",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Vasto",
+      "away": "Ferrara",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "16.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fiorentina",
+      "away": "Bondone",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "17.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Petrarca",
+      "away": "Pressano",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "18.00",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Cingoli",
+      "away": "Scuola di Handball",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "18.45",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Putignano",
+      "away": "Chieti",
+      "venue": "tm"
+    },
+    {
+      "date": "08/07",
+      "time": "08.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Pressano A",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "09.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Petrarca U11",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "09.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Albatro U11",
+      "away": "Mestrino B",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "10.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Putignano",
+      "away": "Scuola di Handball U11",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "12.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli A",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "13.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Scuola di Handball U11",
+      "away": "Albatro U11",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "10.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Mezzocorona",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "11.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chiaravalle",
+      "away": "Pressano B",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "11.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mugello",
+      "away": "Cingoli B",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "12.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mestrino A",
+      "away": "Chieti",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "14.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Mestrino B",
+      "away": "Cingoli C",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "15.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Petrarca U11",
+      "away": "Pressano A",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "17.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Petrarca U11",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "18.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Pressano A",
+      "away": "Mestrino B",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "18.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Scuola di Handball U11",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "19.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Putignano",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "15.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mezzocorona",
+      "away": "Ferrara",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "16.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Mugello",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "16.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Cingoli B",
+      "away": "Chiaravalle",
+      "venue": "pim"
+    },
+    {
+      "date": "08/07",
+      "time": "17.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Pressano B",
+      "away": "Fondi",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Merano",
+      "away": "Fondi",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Crenna",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Cassano Magnago",
+      "away": "Ferrarin",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Camerano",
+      "away": "Imola",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Verdazzurro",
+      "away": "Pressano",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Verona City",
+      "away": "Rapid Nonantola",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Malo",
+      "away": "29 Martiri",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Kaltern",
+      "away": "Vasto",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Albatro",
+      "away": "Conversano",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Aretusa",
+      "away": "Belluno",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "09.20",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Cingoli",
+      "away": "Avola",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "10.10",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Putignano",
+      "away": "Olimpic Massa M.",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Ferrarin",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Crenna",
+      "away": "Merano",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Cassano Magnago",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Rapid Nonantola",
+      "away": "Verdazzurro",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Pressano",
+      "away": "Camerano",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "B",
+      "home": "Imola",
+      "away": "Verona City",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Conversano",
+      "away": "Kaltern",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "Vasto",
+      "away": "Malo",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "C",
+      "home": "29 Martiri",
+      "away": "Albatro",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Olimpic Massa M.",
+      "away": "Cingoli",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.50",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Avola",
+      "away": "Aretusa",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "16.40",
+      "cat": "u14m",
+      "gir": "D",
+      "home": "Belluno",
+      "away": "Putignano",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Laugen",
+      "away": "Camerano",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "A",
+      "home": "Marsala",
+      "away": "Dossobuono",
+      "venue": "pm"
+    },
+    {
+      "date": "09/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Mestrino",
+      "away": "Spallanzani Casalgrande",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Cassano Magnago",
+      "venue": "pmp"
+    },
+    {
+      "date": "09/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Cingoli",
+      "away": "Brixen",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "C",
+      "home": "Montecarlo",
+      "away": "Ariosto",
+      "venue": "pr"
+    },
+    {
+      "date": "09/07",
+      "time": "11.00",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Leno",
+      "away": "Oderzo",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "12.00",
+      "cat": "u14f",
+      "gir": "D",
+      "home": "Sassari",
+      "away": "Seiseralms",
+      "venue": "npm"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Pressano",
+      "away": "Cingoli",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "09.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Romagna",
+      "away": "Petrarca",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "10.00",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Scuola di Handball",
+      "away": "Putignano",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "10.45",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bozen",
+      "away": "Vasto",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "11.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Chiaravalle",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "12.15",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Ferrara",
+      "away": "Fiorentina",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Putignano",
+      "away": "Pressano",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "15.45",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Cingoli",
+      "away": "Romagna",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "16.30",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Scuola di Handball",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "17.15",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fiorentina",
+      "away": "Bozen",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "18.00",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Vasto",
+      "away": "Fondi",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "18.45",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bondone",
+      "away": "Ferrara",
+      "venue": "tm"
+    },
+    {
+      "date": "09/07",
+      "time": "08.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Pressano B",
+      "away": "Mezzocorona",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "09.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Cingoli B",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "09.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chiaravalle",
+      "away": "Chieti",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "10.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mestrino A",
+      "away": "Ferrara",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "10.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli A",
+      "away": "Putignano",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "11.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Albatro U11",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "11.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Scuola di Handball U11",
+      "away": "Pressano A",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "12.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Mestrino B",
+      "away": "Petrarca U11",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "12.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mezzocorona",
+      "away": "Mestrino A",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "13.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Ferrara",
+      "away": "Mugello",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "14.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Fondi",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "15.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Cingoli B",
+      "away": "Pressano B",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "15.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Mestrino B",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "16.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Petrarca U11",
+      "away": "Scuola di Handball U11",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "16.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "17.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Albatro U11",
+      "away": "Putignano",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "17.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Cingoli B",
+      "away": "Mezzocorona",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "18.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Pressano B",
+      "away": "Chieti",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "18.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chiaravalle",
+      "away": "Ferrara",
+      "venue": "pim"
+    },
+    {
+      "date": "09/07",
+      "time": "19.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mugello",
+      "away": "Mestrino A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "08.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bozen",
+      "away": "Bondone",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "09.15",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Fiorentina",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "10.00",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Chiaravalle",
+      "away": "Vasto",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "10.45",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Pressano",
+      "away": "Chieti",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "11.30",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Romagna",
+      "away": "Putignano",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "12.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Petrarca",
+      "away": "Cingoli",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "15.00",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Ferrara",
+      "away": "Bozen",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "15.45",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Bondone",
+      "away": "Fondi",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "16.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fiorentina",
+      "away": "Chiaravalle",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "17.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Scuola di Handball",
+      "away": "Pressano",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "18.00",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Romagna",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "18.45",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Putignano",
+      "away": "Petrarca",
+      "venue": "tm"
+    },
+    {
+      "date": "10/07",
+      "time": "08.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli A",
+      "away": "Albatro U11",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "09.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Putignano",
+      "away": "Cingoli C",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "09.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Pressano A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "10.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Scuola di Handball U11",
+      "away": "Mestrino B",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "12.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Scuola di Handball U11",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "13.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Petrarca U11",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "10.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mezzocorona",
+      "away": "Mugello",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "11.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mestrino A",
+      "away": "Chiaravalle",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "11.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Ferrara",
+      "away": "Fondi",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "12.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Cingoli B",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "14.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Pressano A",
+      "away": "Putignano",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "15.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Albatro U11",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "17.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "18.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Albatro U11",
+      "away": "Pressano A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "18.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Putignano",
+      "away": "Petrarca U11",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "19.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cus Cassino Gaeta",
+      "away": "Mestrino B",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "15.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Mezzocorona",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "16.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Pressano B",
+      "away": "Ferrara",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "16.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Mestrino A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "17.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chiaravalle",
+      "away": "Mugello",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "08.30",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Romagna",
+      "away": "Scuola di Handball",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "09.15",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Petrarca",
+      "away": "Chieti",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "10.00",
+      "cat": "u13",
+      "gir": "B",
+      "home": "Cingoli",
+      "away": "Putignano",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "10.45",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Fondi",
+      "away": "Ferrara",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "11.30",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Chiaravalle",
+      "away": "Bondone",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "12.15",
+      "cat": "u13",
+      "gir": "A",
+      "home": "Vasto",
+      "away": "Fiorentina",
+      "venue": "tm"
+    },
+    {
+      "date": "11/07",
+      "time": "08.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chiaravalle",
+      "away": "Mezzocorona",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "09.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mugello",
+      "away": "Fondi",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "09.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Mestrino A",
+      "away": "Pressano B",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "10.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Ferrara",
+      "away": "Cingoli B",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "10.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Scuola di Handball U11",
+      "away": "Cus Cassino Gaeta",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "11.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Mestrino B",
+      "away": "Putignano",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "11.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Petrarca U11",
+      "away": "Albatro U11",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "12.00",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Pressano A",
+      "away": "Cingoli C",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "12.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Chieti",
+      "away": "Ferrara",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "13.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Cingoli B",
+      "away": "Mestrino A",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "14.30",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Pressano B",
+      "away": "Mugello",
+      "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "15.00",
+      "cat": "u911",
+      "gir": "B",
+      "home": "Fondi",
+      "away": "Chiaravalle",
+      "venue": "pim"
+    }
+  ]
+}
