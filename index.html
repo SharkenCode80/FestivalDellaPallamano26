@@ -99,7 +99,21 @@
   }
   .m .teams{font-size:13.5px;font-weight:500}
   .m .teams .fp{font-weight:700;color:var(--fondi)}
+  .m .teams .win{font-weight:800}
   .m .venue{font-size:11px;color:var(--muted);margin-top:2px}
+  /* punteggio + stato partita */
+  .m .score{
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:20px;
+    letter-spacing:.02em;margin-top:3px;display:flex;align-items:center;gap:8px;line-height:1;
+  }
+  .m .score .badge{
+    font-family:"Inter",sans-serif;font-weight:600;font-size:9.5px;letter-spacing:.08em;
+    text-transform:uppercase;padding:2px 6px;border-radius:999px;
+    background:var(--line);color:var(--muted);
+  }
+  .m .score .badge.fine{background:#DEF7E5;color:#0F7A34}
+  .m .score .badge.live{background:#FDE2E2;color:#C0341D}
+  .m.fondi .score .badge.fine{background:#fff;color:var(--fondi)}
 
   /* category theming */
   .m.u14m{border-left-color:var(--u14m)} .m.u14m .cat{background:var(--u14m-t);color:var(--u14m)}
@@ -117,6 +131,53 @@
   /* evidenzia (dim) le non-Fondi quando non le nascondiamo */
   .m.dim{opacity:.14;filter:grayscale(1)}
 
+  /* ===== Modalità Mister ===== */
+  .chip.mister-btn{border-color:#0F766E;color:#0F766E}
+  .chip.mister-btn[aria-pressed="true"]{background:#0F766E;color:#fff}
+  /* in modalità Mister gli altri filtri sono sospesi */
+  body.mister #controls .chip:not(.mister-btn){opacity:.35;pointer-events:none}
+
+  .m .mister{display:none}              /* nascosto finché non entra il Mister */
+  body.mister .m.fondi .mister{
+    display:block;margin-top:5px;padding-top:5px;border-top:1px dashed var(--line-strong);
+  }
+  .m .mister .clash{font-size:11px;line-height:1.35}
+  .m .mister .clash .ok{color:#0F7A34}
+  .m .mister .clash b{color:#C0341D}
+
+  /* pannello durate per categoria (visibile solo in Mister) */
+  #mister-panel{display:none}
+  body.mister #mister-panel{
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px;margin:0 0 12px;
+  }
+  #mister-panel .mp-title{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.05em;font-size:14px;color:var(--muted);margin-right:2px;
+  }
+  #mister-panel label{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500}
+  #mister-panel .dot{width:10px;height:10px;border-radius:3px}
+  #mister-panel input.catdur{
+    width:56px;font:700 14px "Inter",sans-serif;color:var(--ink);
+    border:1px solid var(--line-strong);border-radius:6px;padding:3px 6px;text-align:center;
+  }
+
+  /* partita del Fondi che si accavalla con un'altra del Fondi */
+  body.mister .m.fondi.conflict{
+    background:#FFE9E6;border-color:#C0341D;border-left-color:#C0341D;
+    box-shadow:0 0 0 2px #C0341D inset;
+  }
+  body.mister .m.fondi.conflict .cat{background:#C0341D}
+
+  #mister-banner{display:none;margin:0 0 14px}
+  body.mister #mister-banner{
+    display:block;font-family:"Barlow Condensed",sans-serif;font-weight:600;
+    font-size:16px;letter-spacing:.02em;padding:9px 14px;border-radius:10px;
+  }
+  #mister-banner.clear{background:#DEF7E5;color:#0F7A34}
+  #mister-banner.warn{background:#FDE2E2;color:#C0341D}
+
   .empty{color:var(--line-strong);font-size:12px;text-align:center;padding-top:6px}
 
   footer{margin-top:16px;color:var(--muted);font-size:12px}
@@ -124,6 +185,11 @@
   @media (max-width:600px){
     tbody td{min-width:160px}
     .m .teams{font-size:12.5px}
+    /* su mobile: niente spaziatore elastico, i chip vanno a capo ordinati */
+    .controls{gap:7px}
+    .sep{flex-basis:100%;height:0;min-width:0;margin:1px 0}
+    .chip{font-size:13.5px;padding:5px 10px;gap:5px}
+    #mister-panel{gap:8px 12px}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -137,6 +203,9 @@
   </header>
 
   <div class="controls" id="controls"></div>
+
+  <div id="mister-panel"></div>
+  <div id="mister-banner"></div>
 
   <div class="board">
     <table id="grid"></table>
@@ -155,21 +224,60 @@
 // ==========================================================================
 
 let V={}, CAT={}, DAYS=[], DOW={}, FONDI="Fondi", D=[], TIMES=[];
-const state = { onlyFondi:true, hide:true, cats:{} };
+let RES={};   // risultati indicizzati per "data|casa|ospite" (normalizzato)
+let FMATCH={}; // partite del Fondi indicizzate per mid (per il calcolo conflitti)
+const state = { onlyFondi:true, hide:true, cats:{}, mister:false };
+
+// durata stimata (minuti) per categoria; l'allenatore la imposta in modalità Mister
+const DEFAULT_DUR = { u14m:50, u14f:50, u13:45, u911:30 };
+const STORE_KEY = "fondi_mister_durate_cat";
+let catDur = {};
+function loadDur(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(_){ return {}; } }
+function saveDur(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(catDur)); }catch(_){ } }
+const getDur = cat => catDur[cat] ?? DEFAULT_DUR[cat] ?? 45;
 
 const toMin = t => { const [a,b]=t.split("."); return (+a)*60+(+b); };
+const fmtMin = x => { const h=Math.floor(x/60), mm=x%60; return `${h}.${String(mm).padStart(2,"0")}`; };
 const isFondi = m => m.home===FONDI || m.away===FONDI;
 const shown = el => el.style.display !== "none";
 
-function teamHTML(name){
-  return name===FONDI ? `<span class="fp">${name}</span>` : name;
+// normalizzazioni per far combaciare i nomi tra calendario e risultati
+const normTeam = s => (s||"").toUpperCase().replace(/\s+/g," ").trim();
+const normDate = s => (s||"").slice(0,5);            // "07/07/2026" -> "07/07"
+const resKey = (d,h,a) => normDate(d)+"|"+normTeam(h)+"|"+normTeam(a);
+const midOf = m => `${normDate(m.date)}|${m.cat}|${normTeam(m.home)}|${normTeam(m.away)}`;
+
+function resultFor(m){
+  const r = RES[resKey(m.date,m.home,m.away)];
+  if(r) return {hs:+r.hs, as:+r.as, status:r.status};
+  const rr = RES[resKey(m.date,m.away,m.home)];       // fallback: ordine invertito
+  if(rr) return {hs:+rr.as, as:+rr.hs, status:rr.status};
+  return null;
+}
+
+function teamHTML(name, win){
+  const cls = (name===FONDI ? "fp" : "") + (win ? " win" : "");
+  return cls.trim() ? `<span class="${cls.trim()}">${name}</span>` : name;
 }
 function matchHTML(m){
   const f = isFondi(m) ? " fondi" : "";
-  return `<div class="m ${m.cat}${f}" data-cat="${m.cat}">
+  const r = resultFor(m);
+  const homeWin = r && r.hs>r.as, awayWin = r && r.as>r.hs;
+  let scoreLine = "";
+  if(r){
+    const st = (r.status||"").toUpperCase();
+    const cls = st==="FINE" ? "fine" : (st ? "live" : "");
+    const label = st || "";
+    const hasScore = Number.isFinite(r.hs) && Number.isFinite(r.as);
+    scoreLine = `<div class="score">${hasScore ? `${r.hs} – ${r.as}` : ""}${label?`<span class="badge ${cls}">${label}</span>`:""}</div>`;
+  }
+  const misterBox = isFondi(m) ? `<div class="mister"><div class="clash"></div></div>` : "";
+  return `<div class="m ${m.cat}${f}" data-cat="${m.cat}" data-mid="${midOf(m)}">
     <span class="cat">${CAT[m.cat]||m.cat} · Gir. ${m.gir}</span>
-    <div class="teams">${teamHTML(m.home)} <span style="color:var(--muted)">–</span> ${teamHTML(m.away)}</div>
+    <div class="teams">${teamHTML(m.home,homeWin)} <span style="color:var(--muted)">–</span> ${teamHTML(m.away,awayWin)}</div>
+    ${scoreLine}
     <div class="venue">${V[m.venue]||m.venue}</div>
+    ${misterBox}
   </div>`;
 }
 
@@ -200,13 +308,16 @@ function build(){
 }
 
 function updateView(){
+  const mister = state.mister;
+  const eOnly = mister ? true : state.onlyFondi;   // in Mister: solo Fondi
+  const eHide = mister ? true : state.hide;         // in Mister: compatta
   document.querySelectorAll(".m[data-cat]").forEach(el=>{
-    const catOn = state.cats[el.dataset.cat];
+    const catOn = mister ? true : state.cats[el.dataset.cat];
     const fondi = el.classList.contains("fondi");
-    const unselected = state.onlyFondi && !fondi;
-    const visible = catOn && !(unselected && state.hide);
+    const unselected = eOnly && !fondi;
+    const visible = catOn && !(unselected && eHide);
     el.style.display = visible ? "" : "none";
-    el.classList.toggle("dim", visible && unselected && !state.hide);
+    el.classList.toggle("dim", visible && unselected && !eHide);
   });
 
   const dayVis = {}; DAYS.forEach(d=> dayVis[d]=0);
@@ -224,11 +335,69 @@ function updateView(){
     if(heads[i+1]) heads[i+1].style.display = on ? "" : "none";
     document.querySelectorAll(`#grid td[data-day="${d}"]`).forEach(td=> td.style.display = on ? "" : "none");
   });
+
+  computeConflicts();
+}
+
+// Evidenzia le partite del Fondi che si sovrappongono nello stesso giorno.
+function computeConflicts(){
+  const cards = [...document.querySelectorAll(".m.fondi")];
+  cards.forEach(el=>{ el.classList.remove("conflict"); const c=el.querySelector(".clash"); if(c) c.innerHTML=""; });
+
+  const banner = document.getElementById("mister-banner");
+  if(!state.mister){ if(banner) banner.className=""; return; }
+
+  const items = cards.map(el=>{
+    const m = FMATCH[el.dataset.mid];
+    const start = toMin(m.time);
+    return { el, m, start, end:start + getDur(m.cat), partners:[] };
+  });
+
+  const clashing = new Set();
+  items.forEach(a=>{
+    a.partners = items.filter(b => b!==a && b.m.date===a.m.date && a.start<b.end && b.start<a.end);
+    const c = a.el.querySelector(".clash");
+    if(a.partners.length){
+      a.el.classList.add("conflict"); clashing.add(a);
+      const list = a.partners.slice().sort((x,y)=>x.start-y.start)
+        .map(p=>`${CAT[p.m.cat]||p.m.cat} ${p.m.time} (${V[p.m.venue]||p.m.venue})`).join(" · ");
+      c.innerHTML = `fine ~${fmtMin(a.end)} · <b>⚠ accavalla:</b> ${list}`;
+    } else {
+      c.innerHTML = `fine ~${fmtMin(a.end)} · <span class="ok">nessun accavallamento</span>`;
+    }
+  });
+
+  if(banner){
+    const n = clashing.size;
+    banner.className = n ? "warn" : "clear";
+    banner.textContent = n
+      ? `⚠ ${n} partite del Fondi si accavallano — non puoi seguirle tutte di persona`
+      : `✓ Nessun accavallamento con le durate impostate: le partite del Fondi non si sovrappongono`;
+  }
+}
+
+function renderMisterPanel(){
+  const p = document.getElementById("mister-panel");
+  if(!p) return;
+  let html = `<span class="mp-title">Durata stimata per categoria</span>`;
+  Object.keys(CAT).forEach(c=>{
+    html += `<label><span class="dot" style="background:var(--${c})"></span>${CAT[c]}
+      <input type="number" class="catdur" data-cat="${c}" min="10" max="120" step="5" value="${getDur(c)}">′</label>`;
+  });
+  p.innerHTML = html;
+
+  p.addEventListener("input", e=>{
+    const inp = e.target.closest("input.catdur"); if(!inp) return;
+    catDur[inp.dataset.cat] = Math.max(5, +inp.value || 0);
+    saveDur();
+    computeConflicts();
+  });
 }
 
 function buildControls(){
   const box = document.getElementById("controls");
-  let html = `<button class="chip fondi" data-role="onlyfondi" aria-pressed="${state.onlyFondi}">★ Solo Fondi</button>
+  let html = `<button class="chip mister-btn" data-role="mister" aria-pressed="${state.mister}">📋 Mister</button>
+    <button class="chip fondi" data-role="onlyfondi" aria-pressed="${state.onlyFondi}">★ Solo Fondi</button>
     <button class="chip" data-role="hide" aria-pressed="${state.hide}">⤢ Nascondi non selezionate</button>
     <span class="sep"></span>`;
   Object.keys(CAT).forEach(c=>{
@@ -240,24 +409,45 @@ function buildControls(){
     const btn = e.target.closest(".chip"); if(!btn) return;
     const on = btn.getAttribute("aria-pressed")==="true";
     btn.setAttribute("aria-pressed", String(!on));
-    if(btn.dataset.role==="onlyfondi")  state.onlyFondi = !on;
-    else if(btn.dataset.role==="hide")  state.hide      = !on;
-    else if(btn.dataset.cat)            state.cats[btn.dataset.cat] = !on;
+    if(btn.dataset.role==="mister"){
+      state.mister = !on;
+      document.body.classList.toggle("mister", state.mister);
+    }
+    else if(btn.dataset.role==="onlyfondi")  state.onlyFondi = !on;
+    else if(btn.dataset.role==="hide")       state.hide      = !on;
+    else if(btn.dataset.cat)                 state.cats[btn.dataset.cat] = !on;
     updateView();
   });
 }
 
-function applyMeta(ev){
-  if(!ev) return;
-  const set=(id,txt)=>{ const el=document.getElementById(id); if(el&&txt) el.textContent=txt; };
-  set("ev-eyebrow", ev.eyebrow);
-  set("ev-title", ev.title);
-  const sub=document.getElementById("ev-sub");
-  if(sub && ev.subtitle){
-    sub.innerHTML = `<b>${ev.subtitle}</b> — griglia per giorno (colonne) e orario (righe). Le partite del <b style="color:var(--fondi)">${FONDI}</b> sono evidenziate in arancione.`;
+function applyMeta(ev, resMeta){
+  if(ev){
+    const set=(id,txt)=>{ const el=document.getElementById(id); if(el&&txt) el.textContent=txt; };
+    set("ev-eyebrow", ev.eyebrow);
+    set("ev-title", ev.title);
+    const sub=document.getElementById("ev-sub");
+    if(sub && ev.subtitle){
+      sub.innerHTML = `<b>${ev.subtitle}</b> — griglia per giorno (colonne) e orario (righe). Le partite del <b style="color:var(--fondi)">${FONDI}</b> sono evidenziate in arancione.`;
+    }
   }
   const foot=document.getElementById("ev-foot");
-  if(foot) foot.textContent = `Dati da ${ev.source||"federhandball.it"}${ev.updated?" (aggiornati al "+ev.updated+")":""}. I punteggi non sono inclusi.`;
+  if(foot){
+    const cal = `Calendario da ${ev&&ev.source||"federhandball.it"}${ev&&ev.updated?" (agg. "+ev.updated+")":""}.`;
+    const ris = resMeta&&resMeta.updated
+      ? ` Risultati agg. al ${resMeta.updated}.`
+      : ` Risultati non ancora disponibili.`;
+    foot.textContent = cal + ris;
+  }
+}
+
+async function loadResults(){
+  try{
+    const res = await fetch("risultati.json", {cache:"no-store"});
+    if(!res.ok) return null;
+    const data = await res.json();
+    (data.results||[]).forEach(r=>{ RES[resKey(r.date,r.home,r.away)] = r; });
+    return data;
+  }catch(_){ return null; }   // i risultati sono opzionali: se mancano, mostro solo il calendario
 }
 
 async function init(){
@@ -274,10 +464,17 @@ async function init(){
     D     = data.matches    || [];
     Object.keys(CAT).forEach(c=> state.cats[c]=true);
 
+    catDur = loadDur();                                  // durate per categoria (Mister)
+    FMATCH = {};
+    D.filter(isFondi).forEach(m=> FMATCH[midOf(m)] = m); // indice per i conflitti
+
     TIMES = [...new Set(D.map(m=>m.time))].sort((a,b)=>toMin(a)-toMin(b));
 
-    applyMeta(data.event);
+    const resMeta = await loadResults();   // carica i risultati (se presenti)
+
+    applyMeta(data.event, resMeta);
     buildControls();
+    renderMisterPanel();
     build();
     updateView();
   }catch(err){
