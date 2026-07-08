@@ -1,18 +1,414 @@
 {
-  "updated": "07/07/2026 21:00",
+  "updated": "08/07/2026 19:28",
   "source": "federhandball.it/live-ticker",
-  "note": "hs = punti squadra di casa, as = punti squadra ospite. status: FINE | LIVE | (vuoto = da giocare). Nomi e ordine come nel live-ticker; il match col calendario è automatico e non distingue maiuscole/spazi.",
   "results": [
-    { "date": "07/07", "home": "FERRARIN",          "away": "CRENNA",           "hs": 13, "as": 15, "status": "FINE" },
-    { "date": "07/07", "home": "RAPID NONANTOLA",    "away": "PRESSANO",         "hs": 13, "as": 17, "status": "FINE" },
-    { "date": "07/07", "home": "CONVERSANO",         "away": "VASTO",            "hs": 24, "as": 14, "status": "FINE" },
-    { "date": "07/07", "home": "CASSANO MAGNAGO",    "away": "MERANO",           "hs": 16, "as": 17, "status": "FINE" },
-    { "date": "07/07", "home": "VERONA CITY",        "away": "CAMERANO",         "hs": 13, "as": 29, "status": "FINE" },
-    { "date": "07/07", "home": "ALBATRO",            "away": "MALO",             "hs": 23, "as": 26, "status": "FINE" },
-    { "date": "07/07", "home": "CUS CASSINO GAETA",  "away": "FONDI",            "hs": 9,  "as": 11, "status": "FINE" },
-    { "date": "07/07", "home": "VERDAZZURRO",        "away": "IMOLA",            "hs": 12, "as": 19, "status": "FINE" },
-    { "date": "07/07", "home": "KALTERN",            "away": "29 MARTIRI",       "hs": 25, "as": 17, "status": "FINE" },
-    { "date": "07/07", "home": "CINGOLI",            "away": "BELLUNO",          "hs": 14, "as": 12, "status": "FINE" },
-    { "date": "07/07", "home": "PUTIGNANO",          "away": "ARETUSA",          "hs": 12, "as": 20, "status": "FINE" }
+    {
+      "date": "07/07",
+      "home": "Conversano",
+      "away": "Vasto",
+      "hs": 24,
+      "as": 14,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Ferrarin",
+      "away": "Crenna",
+      "hs": 13,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Rapid Nonantola",
+      "away": "Pressano",
+      "hs": 13,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Albatro",
+      "away": "Malo",
+      "hs": 23,
+      "as": 26,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Cassano Magnago",
+      "away": "Merano",
+      "hs": 16,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Putignano",
+      "away": "Aretusa",
+      "hs": 12,
+      "as": 20,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Verona City",
+      "away": "Camerano",
+      "hs": 13,
+      "as": 29,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Cingoli",
+      "away": "Belluno",
+      "hs": 14,
+      "as": 12,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Cus Cassino Gaeta",
+      "away": "Fondi",
+      "hs": 9,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Kaltern",
+      "away": "29 Martiri",
+      "hs": 25,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "home": "Verdazzurro",
+      "away": "Imola",
+      "hs": 12,
+      "as": 19,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Aretusa",
+      "away": "Cingoli",
+      "hs": 17,
+      "as": 18,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Camerano",
+      "away": "Verdazzurro",
+      "hs": 31,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Malo",
+      "away": "Kaltern",
+      "hs": 18,
+      "as": 21,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Merano",
+      "away": "Cus Cassino Gaeta",
+      "hs": 26,
+      "as": 7,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Avola",
+      "away": "Putignano",
+      "hs": 10,
+      "as": 9,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Crenna",
+      "away": "Cassano Magnago",
+      "hs": 17,
+      "as": 16,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Pressano",
+      "away": "Verona City",
+      "hs": 13,
+      "as": 20,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Vasto",
+      "away": "Albatro",
+      "hs": 21,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "29 Martiri",
+      "away": "Conversano",
+      "hs": 15,
+      "as": 24,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Belluno",
+      "away": "Olimpic Massa M.",
+      "hs": 24,
+      "as": 14,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Fondi",
+      "away": "Ferrarin",
+      "hs": 19,
+      "as": 21,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Imola",
+      "away": "Rapid Nonantola",
+      "hs": 17,
+      "as": 18,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cingoli",
+      "away": "Ariosto",
+      "hs": 12,
+      "as": 16,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Laugen",
+      "away": "Dossobuono",
+      "hs": 37,
+      "as": 21,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Leno",
+      "away": "Seiseralms",
+      "hs": 11,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Mestrino",
+      "away": "Cassano Magnago",
+      "hs": 25,
+      "as": 18,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Brixen",
+      "away": "Montecarlo",
+      "hs": 27,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Camerano",
+      "away": "Marsala",
+      "hs": 28,
+      "as": 26,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Oderzo",
+      "away": "Sassari",
+      "hs": 30,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Spallanzani Casalgrande",
+      "away": "Fondi",
+      "hs": 24,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Conversano",
+      "away": "Malo",
+      "hs": 22,
+      "as": 12,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Ferrarin",
+      "away": "Merano",
+      "hs": 16,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Olimpic Massa M.",
+      "away": "Aretusa",
+      "hs": 13,
+      "as": 29,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Rapid Nonantola",
+      "away": "Camerano",
+      "hs": 20,
+      "as": 29,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cingoli",
+      "away": "Putignano",
+      "hs": 13,
+      "as": 16,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cus Cassino Gaeta",
+      "away": "Cassano Magnago",
+      "hs": 15,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Kaltern",
+      "away": "Albatro",
+      "hs": 19,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Verdazzurro",
+      "away": "Verona City",
+      "hs": 9,
+      "as": 24,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "29 Martiri",
+      "away": "Vasto",
+      "hs": 18,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Belluno",
+      "away": "Avola",
+      "hs": 19,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Fondi",
+      "away": "Crenna",
+      "hs": 18,
+      "as": 21,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Imola",
+      "away": "Pressano",
+      "hs": 10,
+      "as": 19,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Fondi",
+      "away": "Mestrino",
+      "hs": 15,
+      "as": 30,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Marsala",
+      "away": "Laugen",
+      "hs": 16,
+      "as": 23,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Montecarlo",
+      "away": "Cingoli",
+      "hs": 16,
+      "as": 28,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Sassari",
+      "away": "Leno",
+      "hs": 5,
+      "as": 30,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Ariosto",
+      "away": "Brixen",
+      "hs": 9,
+      "as": 11,
+      "status": "LIVE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cassano Magnago",
+      "away": "Spallanzani Casalgrande",
+      "hs": 6,
+      "as": 11,
+      "status": "LIVE"
+    },
+    {
+      "date": "08/07",
+      "home": "Dossobuono",
+      "away": "Camerano",
+      "hs": 13,
+      "as": 13,
+      "status": "LIVE"
+    },
+    {
+      "date": "08/07",
+      "home": "Seiseralms",
+      "away": "Oderzo",
+      "hs": 1,
+      "as": 4,
+      "status": "LIVE"
+    }
   ]
 }

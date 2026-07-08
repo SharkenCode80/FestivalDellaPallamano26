@@ -25,6 +25,11 @@
     padding:20px 16px 60px;
   }
   .wrap{max-width:1400px;margin:0 auto}
+  #credit{position:fixed;top:8px;right:10px;z-index:9999;font-family:"Barlow Condensed",sans-serif;
+    font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    background:rgba(255,255,255,.72);padding:2px 9px;border-radius:999px;border:1px solid var(--line);
+    pointer-events:none;user-select:none}
+  @media (max-width:600px){#credit{font-size:10px;top:6px;right:6px;padding:2px 7px}}
 
   header.top{margin-bottom:18px}
   .eyebrow{
@@ -432,6 +437,7 @@ function applyMeta(ev, resMeta){
     const set=(id,txt)=>{ const el=document.getElementById(id); if(el&&txt) el.textContent=txt; };
     set("ev-eyebrow", ev.eyebrow);
     set("ev-title", ev.title);
+    if(ev.title) document.title = ev.title;   // nome scheda browser dal calendario
     const sub=document.getElementById("ev-sub");
     if(sub && ev.subtitle){
       sub.innerHTML = `<b>${ev.subtitle}</b> — griglia per giorno (colonne) e orario (righe). Le partite del <b style="color:var(--fondi)">${FONDI}</b> sono evidenziate in arancione.`;
@@ -495,16 +501,35 @@ async function init(){
     updateView();
   }catch(err){
     document.querySelector(".board").innerHTML =
-      `<div style="padding:24px;color:var(--muted);font-size:14px;line-height:1.6">
+      `<div style="padding:24px;color:var(--muted);font-size:14px;line-height:1.7">
         <b style="color:var(--ink)">Impossibile caricare <code>calendario.json</code>.</b><br>
-        Verifica che il file <code>calendario.json</code> sia nella stessa cartella di questa pagina
-        e che la pagina sia aperta tramite un indirizzo <b>http/https</b> (es. GitHub Pages),
-        non aprendo il file direttamente dal disco.<br>
+        Assicurati che <code>calendario.json</code> (e opzionalmente <code>risultati.json</code>)
+        siano nella <b>stessa cartella</b> di questa pagina.<br><br>
+        Se stai aprendo il file con doppio clic dal disco (<code>file://</code>), il browser blocca
+        il caricamento dei JSON: serve un piccolo server locale. Dalla cartella, esegui una di queste
+        e poi apri <code>http://localhost:8000</code>:
+        <div style="margin:6px 0;font-family:monospace;color:var(--ink)">
+          python3 -m http.server 8000<br>
+          npx serve .
+        </div>
+        Online (GitHub Pages o qualsiasi hosting) funziona invece direttamente.<br>
         <span style="font-size:12px">Dettaglio: ${err.message}</span>
       </div>`;
   }
 }
 init();
+
+/* credito (offuscato, reinserito se rimosso) */
+(function(){
+  const n = new TextDecoder().decode(Uint8Array.from(atob("VmluY2Vuem8gRm9ydGU="), c=>c.charCodeAt(0)));
+  function ensure(){
+    let el = document.getElementById("credit");
+    if(!el){ el = document.createElement("div"); el.id = "credit"; document.body.appendChild(el); }
+    if(el.textContent !== n) el.textContent = n;
+  }
+  ensure();
+  try{ new MutationObserver(ensure).observe(document.body, {childList:true, subtree:true}); }catch(_){}
+})();
 
 </script>
 </body>
