@@ -27,6 +27,16 @@
     "u13": "U13",
     "u911": "U9-11"
   },
+  "mister": {
+    "buffer": 10,
+    "_nota": "Durata match = 2*tempo + pausa (minuti). buffer = minuti minimi tra la fine di una gara e l'inizio della successiva; sotto quella soglia sono considerate un possibile accavallamento.",
+    "durate": {
+      "u14m": { "tempo": 20, "pausa": 10 },
+      "u14f": { "tempo": 20, "pausa": 10 },
+      "u13":  { "tempo": 20, "pausa": 5 },
+      "u911": { "tempo": 12, "pausa": 6 }
+    }
+  },
   "venues": {
     "npm": "Nuovo Pal. Misano",
     "pm": "Palasport Misano",
