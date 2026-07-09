@@ -1,5 +1,5 @@
 {
-  "updated": "09/07/2026 18:33",
+  "updated": "09/07/2026 18:46",
   "source": "federhandball.it (programma-e-risultati)",
   "results": [
     {
@@ -18,6 +18,15 @@
       "away": "Merano",
       "hs": 16,
       "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "07/07",
+      "cat": "u14m",
+      "home": "Ferrarin",
+      "away": "Crenna",
+      "hs": 13,
+      "as": 15,
       "status": "FINE"
     },
     {
@@ -93,12 +102,12 @@
       "status": "FINE"
     },
     {
-      "date": "07/07",
-      "cat": "u14m",
-      "home": "Olimpic Massa M.",
-      "away": "Avola",
-      "hs": 17,
-      "as": 12,
+      "date": "08/07",
+      "cat": "u13",
+      "home": "Bozen",
+      "away": "Fondi",
+      "hs": 18,
+      "as": 9,
       "status": "FINE"
     },
     {
@@ -152,6 +161,15 @@
       "home": "Cingoli C",
       "away": "Petrarca U11",
       "hs": 9,
+      "as": 13,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "cat": "u911",
+      "home": "Pressano A",
+      "away": "Cingoli A",
+      "hs": 26,
       "as": 13,
       "status": "FINE"
     },
@@ -306,6 +324,15 @@
       "away": "Marsala",
       "hs": 28,
       "as": 26,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "cat": "u14f",
+      "home": "Laugen",
+      "away": "Dossobuono",
+      "hs": 37,
+      "as": 21,
       "status": "FINE"
     },
     {
@@ -581,15 +608,6 @@
     {
       "date": "08/07",
       "cat": "u14m",
-      "home": "Merano",
-      "away": "Fondi",
-      "hs": 23,
-      "as": 7,
-      "status": "FINE"
-    },
-    {
-      "date": "08/07",
-      "cat": "u14m",
       "home": "Olimpic Massa M.",
       "away": "Aretusa",
       "hs": 13,
@@ -603,15 +621,6 @@
       "away": "Camerano",
       "hs": 20,
       "as": 29,
-      "status": "FINE"
-    },
-    {
-      "date": "08/07",
-      "cat": "u911",
-      "home": "Cingoli A",
-      "away": "Putignano",
-      "hs": 14,
-      "as": 24,
       "status": "FINE"
     },
     {
@@ -698,15 +707,6 @@
     {
       "date": "08/07",
       "cat": "u14f",
-      "home": "Laugen",
-      "away": "Camerano",
-      "hs": 34,
-      "as": 20,
-      "status": "FINE"
-    },
-    {
-      "date": "08/07",
-      "cat": "u14f",
       "home": "Montecarlo",
       "away": "Cingoli",
       "hs": 16,
@@ -729,15 +729,6 @@
       "away": "Cus Cassino Gaeta",
       "hs": 25,
       "as": 12,
-      "status": "FINE"
-    },
-    {
-      "date": "08/07",
-      "cat": "u13",
-      "home": "Bozen",
-      "away": "Vasto",
-      "hs": 25,
-      "as": 6,
       "status": "FINE"
     },
     {
@@ -873,6 +864,15 @@
       "away": "Ferrara",
       "hs": 13,
       "as": 25,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "cat": "u13",
+      "home": "Fiorentina",
+      "away": "Bozen",
+      "hs": 11,
+      "as": 15,
       "status": "FINE"
     },
     {
@@ -1116,6 +1116,15 @@
       "away": "Malo",
       "hs": 28,
       "as": 35,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "cat": "u911",
+      "home": "Cingoli B",
+      "away": "Mezzocorona",
+      "hs": 5,
+      "as": 13,
       "status": "FINE"
     },
     {
