@@ -1,6 +1,6 @@
 {
-  "updated": "08/07/2026 19:28",
-  "source": "federhandball.it/live-ticker",
+  "updated": "09/07/2026 10:46",
+  "source": "federhandball.it (pagine competizione + live-ticker)",
   "results": [
     {
       "date": "07/07",
@@ -409,6 +409,70 @@
       "hs": 1,
       "as": 4,
       "status": "LIVE"
+    },
+    {
+      "date": "09/07",
+      "home": "Aretusa",
+      "away": "Belluno",
+      "hs": 23,
+      "as": 16,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Camerano",
+      "away": "Imola",
+      "hs": 24,
+      "as": 13,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Malo",
+      "away": "29 Martiri",
+      "hs": 25,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Merano",
+      "away": "Fondi",
+      "hs": 23,
+      "as": 7,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Cingoli",
+      "away": "Avola",
+      "hs": 19,
+      "as": 18,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Cus Cassino Gaeta",
+      "away": "Crenna",
+      "hs": 7,
+      "as": 21,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Kaltern",
+      "away": "Vasto",
+      "hs": 24,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Verdazzurro",
+      "away": "Pressano",
+      "hs": 7,
+      "as": 11,
+      "status": "FINE"
     }
   ]
 }
