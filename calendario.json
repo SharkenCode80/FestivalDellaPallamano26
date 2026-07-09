@@ -4,7 +4,7 @@
     "eyebrow": "FIGH Finals · Riviera di Rimini & Pesaro",
     "subtitle": "7 – 11 luglio · Misano · Riccione · Pesaro",
     "source": "federhandball.it",
-    "updated": "09/07/2026 18:33"
+    "updated": "09/07/2026 20:30"
   },
   "fondiTeam": "Fondi",
   "days": [
@@ -69,7 +69,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.00",
+      "time": "17.50",
       "cat": "u14m",
       "gir": "A",
       "home": "Cassano Magnago",
@@ -78,7 +78,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.50",
+      "time": "18.40",
       "cat": "u14m",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -87,7 +87,7 @@
     },
     {
       "date": "07/07",
-      "time": "18.40",
+      "time": "17.00",
       "cat": "u14m",
       "gir": "B",
       "home": "Rapid Nonantola",
@@ -96,7 +96,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.00",
+      "time": "17.50",
       "cat": "u14m",
       "gir": "B",
       "home": "Verona City",
@@ -105,7 +105,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.50",
+      "time": "18.40",
       "cat": "u14m",
       "gir": "B",
       "home": "Verdazzurro",
@@ -114,7 +114,7 @@
     },
     {
       "date": "07/07",
-      "time": "18.40",
+      "time": "17.00",
       "cat": "u14m",
       "gir": "C",
       "home": "Conversano",
@@ -123,7 +123,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.00",
+      "time": "17.50",
       "cat": "u14m",
       "gir": "C",
       "home": "Albatro",
@@ -132,7 +132,7 @@
     },
     {
       "date": "07/07",
-      "time": "17.50",
+      "time": "18.40",
       "cat": "u14m",
       "gir": "C",
       "home": "Kaltern",
@@ -140,7 +140,7 @@
       "venue": "pmp"
     },
     {
-      "date": "07/07",
+      "date": "08/07",
       "time": "20.00",
       "cat": "u14m",
       "gir": "D",
@@ -150,7 +150,7 @@
     },
     {
       "date": "07/07",
-      "time": "18.40",
+      "time": "17.50",
       "cat": "u14m",
       "gir": "D",
       "home": "Putignano",
@@ -168,7 +168,7 @@
     },
     {
       "date": "08/07",
-      "time": "20.00",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "A",
       "home": "Merano",
@@ -177,7 +177,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "A",
       "home": "Crenna",
@@ -186,7 +186,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "A",
       "home": "Fondi",
@@ -195,7 +195,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "B",
       "home": "Camerano",
@@ -204,7 +204,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "B",
       "home": "Pressano",
@@ -213,7 +213,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "B",
       "home": "Imola",
@@ -222,7 +222,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "C",
       "home": "Malo",
@@ -231,7 +231,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "C",
       "home": "Vasto",
@@ -240,7 +240,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "C",
       "home": "29 Martiri",
@@ -249,7 +249,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "D",
       "home": "Aretusa",
@@ -258,7 +258,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "D",
       "home": "Avola",
@@ -267,7 +267,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "D",
       "home": "Belluno",
@@ -276,7 +276,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.10",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "A",
       "home": "Ferrarin",
@@ -285,7 +285,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -294,7 +294,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "A",
       "home": "Fondi",
@@ -303,7 +303,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "B",
       "home": "Rapid Nonantola",
@@ -312,7 +312,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "B",
       "home": "Verdazzurro",
@@ -321,7 +321,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "B",
       "home": "Imola",
@@ -330,7 +330,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "C",
       "home": "Conversano",
@@ -339,7 +339,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "C",
       "home": "Kaltern",
@@ -348,7 +348,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "C",
       "home": "29 Martiri",
@@ -357,7 +357,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "D",
       "home": "Olimpic Massa M.",
@@ -366,7 +366,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "D",
       "home": "Cingoli",
@@ -375,7 +375,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "D",
       "home": "Belluno",
@@ -393,7 +393,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "A",
       "home": "Camerano",
@@ -402,7 +402,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "B",
       "home": "Mestrino",
@@ -411,7 +411,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "B",
       "home": "Spallanzani Casalgrande",
@@ -420,7 +420,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "C",
       "home": "Cingoli",
@@ -429,7 +429,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "C",
       "home": "Brixen",
@@ -438,7 +438,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "D",
       "home": "Leno",
@@ -447,7 +447,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "D",
       "home": "Oderzo",
@@ -456,7 +456,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.00",
+      "time": "17.30",
       "cat": "u14f",
       "gir": "A",
       "home": "Marsala",
@@ -465,7 +465,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.30",
+      "time": "18.30",
       "cat": "u14f",
       "gir": "A",
       "home": "Dossobuono",
@@ -474,7 +474,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.30",
+      "time": "17.30",
       "cat": "u14f",
       "gir": "B",
       "home": "Fondi",
@@ -483,7 +483,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.30",
+      "time": "18.30",
       "cat": "u14f",
       "gir": "B",
       "home": "Cassano Magnago",
@@ -492,7 +492,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.30",
+      "time": "17.30",
       "cat": "u14f",
       "gir": "C",
       "home": "Montecarlo",
@@ -501,7 +501,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.30",
+      "time": "18.30",
       "cat": "u14f",
       "gir": "C",
       "home": "Ariosto",
@@ -510,7 +510,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.30",
+      "time": "17.30",
       "cat": "u14f",
       "gir": "D",
       "home": "Sassari",
@@ -519,7 +519,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.30",
+      "time": "18.30",
       "cat": "u14f",
       "gir": "D",
       "home": "Seiseralms",
@@ -537,7 +537,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.15",
       "cat": "u13",
       "gir": "A",
       "home": "Ferrara",
@@ -546,7 +546,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.15",
+      "time": "10.00",
       "cat": "u13",
       "gir": "A",
       "home": "Bondone",
@@ -555,7 +555,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.00",
+      "time": "10.45",
       "cat": "u13",
       "gir": "B",
       "home": "Pressano",
@@ -564,7 +564,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.45",
+      "time": "11.30",
       "cat": "u13",
       "gir": "B",
       "home": "Scuola di Handball",
@@ -573,7 +573,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.30",
+      "time": "12.15",
       "cat": "u13",
       "gir": "B",
       "home": "Chieti",
@@ -582,7 +582,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.15",
+      "time": "15.00",
       "cat": "u13",
       "gir": "A",
       "home": "Chiaravalle",
@@ -591,7 +591,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "15.45",
       "cat": "u13",
       "gir": "A",
       "home": "Vasto",
@@ -600,7 +600,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.45",
+      "time": "16.30",
       "cat": "u13",
       "gir": "A",
       "home": "Fiorentina",
@@ -609,7 +609,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.30",
+      "time": "17.15",
       "cat": "u13",
       "gir": "B",
       "home": "Petrarca",
@@ -618,7 +618,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.15",
+      "time": "18.00",
       "cat": "u13",
       "gir": "B",
       "home": "Cingoli",
@@ -627,7 +627,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.00",
+      "time": "18.45",
       "cat": "u13",
       "gir": "B",
       "home": "Putignano",
@@ -645,7 +645,7 @@
     },
     {
       "date": "08/07",
-      "time": "08.30",
+      "time": "09.00",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli C",
@@ -654,7 +654,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.00",
+      "time": "09.30",
       "cat": "u911",
       "gir": "A",
       "home": "Albatro U11",
@@ -663,7 +663,7 @@
     },
     {
       "date": "08/07",
-      "time": "09.30",
+      "time": "10.00",
       "cat": "u911",
       "gir": "A",
       "home": "Putignano",
@@ -672,7 +672,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.00",
+      "time": "12.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli A",
@@ -681,7 +681,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.30",
+      "time": "13.00",
       "cat": "u911",
       "gir": "A",
       "home": "Scuola di Handball U11",
@@ -690,7 +690,7 @@
     },
     {
       "date": "08/07",
-      "time": "13.00",
+      "time": "10.30",
       "cat": "u911",
       "gir": "B",
       "home": "Fondi",
@@ -699,7 +699,7 @@
     },
     {
       "date": "08/07",
-      "time": "10.30",
+      "time": "11.00",
       "cat": "u911",
       "gir": "B",
       "home": "Chiaravalle",
@@ -708,7 +708,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.00",
+      "time": "11.30",
       "cat": "u911",
       "gir": "B",
       "home": "Mugello",
@@ -717,7 +717,7 @@
     },
     {
       "date": "08/07",
-      "time": "11.30",
+      "time": "12.00",
       "cat": "u911",
       "gir": "B",
       "home": "Mestrino A",
@@ -726,7 +726,7 @@
     },
     {
       "date": "08/07",
-      "time": "12.00",
+      "time": "14.30",
       "cat": "u911",
       "gir": "A",
       "home": "Mestrino B",
@@ -735,7 +735,7 @@
     },
     {
       "date": "08/07",
-      "time": "14.30",
+      "time": "15.00",
       "cat": "u911",
       "gir": "A",
       "home": "Petrarca U11",
@@ -744,7 +744,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.00",
+      "time": "17.30",
       "cat": "u911",
       "gir": "A",
       "home": "Petrarca U11",
@@ -753,7 +753,7 @@
     },
     {
       "date": "08/07",
-      "time": "17.30",
+      "time": "18.00",
       "cat": "u911",
       "gir": "A",
       "home": "Pressano A",
@@ -762,7 +762,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.00",
+      "time": "18.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli C",
@@ -771,7 +771,7 @@
     },
     {
       "date": "08/07",
-      "time": "18.30",
+      "time": "19.00",
       "cat": "u911",
       "gir": "A",
       "home": "Putignano",
@@ -780,7 +780,7 @@
     },
     {
       "date": "08/07",
-      "time": "19.00",
+      "time": "15.30",
       "cat": "u911",
       "gir": "B",
       "home": "Mezzocorona",
@@ -789,7 +789,7 @@
     },
     {
       "date": "08/07",
-      "time": "15.30",
+      "time": "16.00",
       "cat": "u911",
       "gir": "B",
       "home": "Chieti",
@@ -798,7 +798,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.00",
+      "time": "16.30",
       "cat": "u911",
       "gir": "B",
       "home": "Cingoli B",
@@ -807,7 +807,7 @@
     },
     {
       "date": "08/07",
-      "time": "16.30",
+      "time": "17.00",
       "cat": "u911",
       "gir": "B",
       "home": "Pressano B",
@@ -815,8 +815,8 @@
       "venue": "pim"
     },
     {
-      "date": "08/07",
-      "time": "16.40",
+      "date": "09/07",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "A",
       "home": "Merano",
@@ -825,7 +825,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -834,7 +834,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "A",
       "home": "Cassano Magnago",
@@ -843,7 +843,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "B",
       "home": "Camerano",
@@ -852,7 +852,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "B",
       "home": "Verdazzurro",
@@ -861,7 +861,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "B",
       "home": "Verona City",
@@ -870,7 +870,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "C",
       "home": "Malo",
@@ -879,7 +879,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "C",
       "home": "Kaltern",
@@ -888,7 +888,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "C",
       "home": "Albatro",
@@ -897,7 +897,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.10",
+      "time": "08.30",
       "cat": "u14m",
       "gir": "D",
       "home": "Aretusa",
@@ -906,7 +906,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.20",
       "cat": "u14m",
       "gir": "D",
       "home": "Cingoli",
@@ -915,7 +915,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.20",
+      "time": "10.10",
       "cat": "u14m",
       "gir": "D",
       "home": "Putignano",
@@ -924,7 +924,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.10",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "A",
       "home": "Ferrarin",
@@ -933,7 +933,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "A",
       "home": "Crenna",
@@ -942,7 +942,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "A",
       "home": "Fondi",
@@ -951,7 +951,7 @@
     },
     {
       "date": "09/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "B",
       "home": "Rapid Nonantola",
@@ -960,7 +960,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "B",
       "home": "Pressano",
@@ -969,7 +969,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "B",
       "home": "Imola",
@@ -978,7 +978,7 @@
     },
     {
       "date": "09/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "C",
       "home": "Conversano",
@@ -987,7 +987,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "C",
       "home": "Vasto",
@@ -996,7 +996,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "C",
       "home": "29 Martiri",
@@ -1005,7 +1005,7 @@
     },
     {
       "date": "09/07",
-      "time": "16.40",
+      "time": "15.00",
       "cat": "u14m",
       "gir": "D",
       "home": "Olimpic Massa M.",
@@ -1014,7 +1014,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "15.50",
       "cat": "u14m",
       "gir": "D",
       "home": "Avola",
@@ -1023,7 +1023,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.50",
+      "time": "16.40",
       "cat": "u14m",
       "gir": "D",
       "home": "Belluno",
@@ -1031,8 +1031,8 @@
       "venue": "pm"
     },
     {
-      "date": "08/07",
-      "time": "18.30",
+      "date": "09/07",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "A",
       "home": "Laugen",
@@ -1041,7 +1041,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "A",
       "home": "Marsala",
@@ -1050,7 +1050,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "B",
       "home": "Mestrino",
@@ -1059,7 +1059,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "B",
       "home": "Fondi",
@@ -1068,7 +1068,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "C",
       "home": "Cingoli",
@@ -1077,7 +1077,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "C",
       "home": "Montecarlo",
@@ -1086,7 +1086,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.00",
+      "time": "11.00",
       "cat": "u14f",
       "gir": "D",
       "home": "Leno",
@@ -1095,7 +1095,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.00",
+      "time": "12.00",
       "cat": "u14f",
       "gir": "D",
       "home": "Sassari",
@@ -1104,7 +1104,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.15",
+      "time": "08.30",
       "cat": "u13",
       "gir": "B",
       "home": "Pressano",
@@ -1113,7 +1113,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.15",
       "cat": "u13",
       "gir": "B",
       "home": "Romagna",
@@ -1122,7 +1122,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.15",
+      "time": "10.00",
       "cat": "u13",
       "gir": "B",
       "home": "Scuola di Handball",
@@ -1130,8 +1130,8 @@
       "venue": "tm"
     },
     {
-      "date": "08/07",
-      "time": "18.45",
+      "date": "09/07",
+      "time": "10.45",
       "cat": "u13",
       "gir": "A",
       "home": "Bozen",
@@ -1140,7 +1140,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.45",
+      "time": "11.30",
       "cat": "u13",
       "gir": "A",
       "home": "Fondi",
@@ -1149,7 +1149,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.30",
+      "time": "12.15",
       "cat": "u13",
       "gir": "A",
       "home": "Ferrara",
@@ -1158,7 +1158,7 @@
     },
     {
       "date": "09/07",
-      "time": "18.45",
+      "time": "15.00",
       "cat": "u13",
       "gir": "B",
       "home": "Putignano",
@@ -1167,7 +1167,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "15.45",
       "cat": "u13",
       "gir": "B",
       "home": "Cingoli",
@@ -1176,7 +1176,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.45",
+      "time": "16.30",
       "cat": "u13",
       "gir": "B",
       "home": "Chieti",
@@ -1185,7 +1185,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.00",
+      "time": "17.15",
       "cat": "u13",
       "gir": "A",
       "home": "Fiorentina",
@@ -1194,7 +1194,7 @@
     },
     {
       "date": "09/07",
-      "time": "17.15",
+      "time": "18.00",
       "cat": "u13",
       "gir": "A",
       "home": "Vasto",
@@ -1203,7 +1203,7 @@
     },
     {
       "date": "09/07",
-      "time": "18.00",
+      "time": "18.45",
       "cat": "u13",
       "gir": "A",
       "home": "Bondone",
@@ -1212,7 +1212,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.00",
+      "time": "08.30",
       "cat": "u911",
       "gir": "B",
       "home": "Pressano B",
@@ -1221,7 +1221,7 @@
     },
     {
       "date": "09/07",
-      "time": "08.30",
+      "time": "09.00",
       "cat": "u911",
       "gir": "B",
       "home": "Fondi",
@@ -1230,7 +1230,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.00",
+      "time": "09.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chiaravalle",
@@ -1239,7 +1239,7 @@
     },
     {
       "date": "09/07",
-      "time": "09.30",
+      "time": "10.00",
       "cat": "u911",
       "gir": "B",
       "home": "Mestrino A",
@@ -1247,8 +1247,8 @@
       "venue": "pim"
     },
     {
-      "date": "08/07",
-      "time": "17.00",
+      "date": "09/07",
+      "time": "10.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli A",
@@ -1257,7 +1257,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.30",
+      "time": "11.00",
       "cat": "u911",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -1266,7 +1266,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.00",
+      "time": "11.30",
       "cat": "u911",
       "gir": "A",
       "home": "Scuola di Handball U11",
@@ -1275,7 +1275,7 @@
     },
     {
       "date": "09/07",
-      "time": "11.30",
+      "time": "12.00",
       "cat": "u911",
       "gir": "A",
       "home": "Mestrino B",
@@ -1284,7 +1284,7 @@
     },
     {
       "date": "09/07",
-      "time": "10.00",
+      "time": "12.30",
       "cat": "u911",
       "gir": "B",
       "home": "Mezzocorona",
@@ -1293,7 +1293,7 @@
     },
     {
       "date": "09/07",
-      "time": "12.30",
+      "time": "13.00",
       "cat": "u911",
       "gir": "B",
       "home": "Ferrara",
@@ -1302,7 +1302,7 @@
     },
     {
       "date": "09/07",
-      "time": "17.00",
+      "time": "14.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chieti",
@@ -1311,7 +1311,7 @@
     },
     {
       "date": "09/07",
-      "time": "14.30",
+      "time": "15.00",
       "cat": "u911",
       "gir": "B",
       "home": "Cingoli B",
@@ -1320,7 +1320,7 @@
     },
     {
       "date": "09/07",
-      "time": "13.00",
+      "time": "15.30",
       "cat": "u911",
       "gir": "A",
       "home": "Mestrino B",
@@ -1329,7 +1329,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.30",
+      "time": "16.00",
       "cat": "u911",
       "gir": "A",
       "home": "Petrarca U11",
@@ -1338,7 +1338,7 @@
     },
     {
       "date": "09/07",
-      "time": "16.00",
+      "time": "16.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli C",
@@ -1347,7 +1347,7 @@
     },
     {
       "date": "09/07",
-      "time": "16.30",
+      "time": "17.00",
       "cat": "u911",
       "gir": "A",
       "home": "Albatro U11",
@@ -1356,7 +1356,7 @@
     },
     {
       "date": "09/07",
-      "time": "15.00",
+      "time": "17.30",
       "cat": "u911",
       "gir": "B",
       "home": "Cingoli B",
@@ -1365,7 +1365,7 @@
     },
     {
       "date": "09/07",
-      "time": "17.30",
+      "time": "18.00",
       "cat": "u911",
       "gir": "B",
       "home": "Pressano B",
@@ -1374,7 +1374,7 @@
     },
     {
       "date": "09/07",
-      "time": "18.00",
+      "time": "18.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chiaravalle",
@@ -1383,7 +1383,7 @@
     },
     {
       "date": "09/07",
-      "time": "18.30",
+      "time": "19.00",
       "cat": "u911",
       "gir": "B",
       "home": "Mugello",
@@ -1391,8 +1391,8 @@
       "venue": "pim"
     },
     {
-      "date": "09/07",
-      "time": "16.30",
+      "date": "10/07",
+      "time": "08.30",
       "cat": "u13",
       "gir": "A",
       "home": "Bozen",
@@ -1401,7 +1401,7 @@
     },
     {
       "date": "10/07",
-      "time": "08.30",
+      "time": "09.15",
       "cat": "u13",
       "gir": "A",
       "home": "Fondi",
@@ -1410,7 +1410,7 @@
     },
     {
       "date": "10/07",
-      "time": "09.15",
+      "time": "10.00",
       "cat": "u13",
       "gir": "A",
       "home": "Chiaravalle",
@@ -1419,7 +1419,7 @@
     },
     {
       "date": "10/07",
-      "time": "10.00",
+      "time": "10.45",
       "cat": "u13",
       "gir": "B",
       "home": "Pressano",
@@ -1428,7 +1428,7 @@
     },
     {
       "date": "10/07",
-      "time": "10.45",
+      "time": "11.30",
       "cat": "u13",
       "gir": "B",
       "home": "Romagna",
@@ -1437,7 +1437,7 @@
     },
     {
       "date": "10/07",
-      "time": "11.30",
+      "time": "12.15",
       "cat": "u13",
       "gir": "B",
       "home": "Petrarca",
@@ -1446,7 +1446,7 @@
     },
     {
       "date": "10/07",
-      "time": "12.15",
+      "time": "15.00",
       "cat": "u13",
       "gir": "A",
       "home": "Ferrara",
@@ -1455,7 +1455,7 @@
     },
     {
       "date": "10/07",
-      "time": "15.00",
+      "time": "15.45",
       "cat": "u13",
       "gir": "A",
       "home": "Bondone",
@@ -1464,7 +1464,7 @@
     },
     {
       "date": "10/07",
-      "time": "15.45",
+      "time": "16.30",
       "cat": "u13",
       "gir": "A",
       "home": "Fiorentina",
@@ -1473,7 +1473,7 @@
     },
     {
       "date": "10/07",
-      "time": "16.30",
+      "time": "17.15",
       "cat": "u13",
       "gir": "B",
       "home": "Scuola di Handball",
@@ -1482,7 +1482,7 @@
     },
     {
       "date": "10/07",
-      "time": "17.15",
+      "time": "18.00",
       "cat": "u13",
       "gir": "B",
       "home": "Chieti",
@@ -1491,7 +1491,7 @@
     },
     {
       "date": "10/07",
-      "time": "18.00",
+      "time": "18.45",
       "cat": "u13",
       "gir": "B",
       "home": "Putignano",
@@ -1499,8 +1499,8 @@
       "venue": "tm"
     },
     {
-      "date": "09/07",
-      "time": "19.00",
+      "date": "10/07",
+      "time": "08.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli A",
@@ -1509,7 +1509,7 @@
     },
     {
       "date": "10/07",
-      "time": "08.30",
+      "time": "09.00",
       "cat": "u911",
       "gir": "A",
       "home": "Putignano",
@@ -1518,7 +1518,7 @@
     },
     {
       "date": "10/07",
-      "time": "09.00",
+      "time": "09.30",
       "cat": "u911",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -1527,7 +1527,7 @@
     },
     {
       "date": "10/07",
-      "time": "09.30",
+      "time": "10.00",
       "cat": "u911",
       "gir": "A",
       "home": "Scuola di Handball U11",
@@ -1536,7 +1536,7 @@
     },
     {
       "date": "10/07",
-      "time": "10.00",
+      "time": "12.30",
       "cat": "u911",
       "gir": "A",
       "home": "Scuola di Handball U11",
@@ -1545,7 +1545,7 @@
     },
     {
       "date": "10/07",
-      "time": "12.30",
+      "time": "13.00",
       "cat": "u911",
       "gir": "A",
       "home": "Petrarca U11",
@@ -1554,7 +1554,7 @@
     },
     {
       "date": "10/07",
-      "time": "13.00",
+      "time": "10.30",
       "cat": "u911",
       "gir": "B",
       "home": "Mezzocorona",
@@ -1563,7 +1563,7 @@
     },
     {
       "date": "10/07",
-      "time": "10.30",
+      "time": "11.00",
       "cat": "u911",
       "gir": "B",
       "home": "Mestrino A",
@@ -1572,7 +1572,7 @@
     },
     {
       "date": "10/07",
-      "time": "11.00",
+      "time": "11.30",
       "cat": "u911",
       "gir": "B",
       "home": "Ferrara",
@@ -1581,7 +1581,7 @@
     },
     {
       "date": "10/07",
-      "time": "11.30",
+      "time": "12.00",
       "cat": "u911",
       "gir": "B",
       "home": "Chieti",
@@ -1590,20 +1590,11 @@
     },
     {
       "date": "10/07",
-      "time": "12.00",
+      "time": "14.30",
       "cat": "u911",
       "gir": "A",
       "home": "Pressano A",
       "away": "Putignano",
-      "venue": "pim"
-    },
-    {
-      "date": "10/07",
-      "time": "14.30",
-      "cat": "u911",
-      "gir": "A",
-      "home": "Cingoli C",
-      "away": "Albatro U11",
       "venue": "pim"
     },
     {
@@ -1612,12 +1603,21 @@
       "cat": "u911",
       "gir": "A",
       "home": "Cingoli C",
-      "away": "Cingoli A",
+      "away": "Albatro U11",
       "venue": "pim"
     },
     {
       "date": "10/07",
       "time": "17.30",
+      "cat": "u911",
+      "gir": "A",
+      "home": "Cingoli C",
+      "away": "Cingoli A",
+      "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "18.00",
       "cat": "u911",
       "gir": "A",
       "home": "Albatro U11",
@@ -1626,7 +1626,7 @@
     },
     {
       "date": "10/07",
-      "time": "18.00",
+      "time": "18.30",
       "cat": "u911",
       "gir": "A",
       "home": "Putignano",
@@ -1635,7 +1635,7 @@
     },
     {
       "date": "10/07",
-      "time": "18.30",
+      "time": "19.00",
       "cat": "u911",
       "gir": "A",
       "home": "Cus Cassino Gaeta",
@@ -1644,7 +1644,7 @@
     },
     {
       "date": "10/07",
-      "time": "19.00",
+      "time": "15.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chieti",
@@ -1653,7 +1653,7 @@
     },
     {
       "date": "10/07",
-      "time": "15.30",
+      "time": "16.00",
       "cat": "u911",
       "gir": "B",
       "home": "Pressano B",
@@ -1662,7 +1662,7 @@
     },
     {
       "date": "10/07",
-      "time": "16.00",
+      "time": "16.30",
       "cat": "u911",
       "gir": "B",
       "home": "Fondi",
@@ -1671,7 +1671,7 @@
     },
     {
       "date": "10/07",
-      "time": "16.30",
+      "time": "17.00",
       "cat": "u911",
       "gir": "B",
       "home": "Chiaravalle",
@@ -1680,7 +1680,7 @@
     },
     {
       "date": "11/07",
-      "time": "12.15",
+      "time": "08.30",
       "cat": "u13",
       "gir": "B",
       "home": "Romagna",
@@ -1689,7 +1689,7 @@
     },
     {
       "date": "11/07",
-      "time": "08.30",
+      "time": "09.15",
       "cat": "u13",
       "gir": "B",
       "home": "Petrarca",
@@ -1698,7 +1698,7 @@
     },
     {
       "date": "11/07",
-      "time": "09.15",
+      "time": "10.00",
       "cat": "u13",
       "gir": "B",
       "home": "Cingoli",
@@ -1706,8 +1706,8 @@
       "venue": "tm"
     },
     {
-      "date": "10/07",
-      "time": "18.45",
+      "date": "11/07",
+      "time": "10.45",
       "cat": "u13",
       "gir": "A",
       "home": "Fondi",
@@ -1716,7 +1716,7 @@
     },
     {
       "date": "11/07",
-      "time": "10.45",
+      "time": "11.30",
       "cat": "u13",
       "gir": "A",
       "home": "Chiaravalle",
@@ -1725,7 +1725,7 @@
     },
     {
       "date": "11/07",
-      "time": "11.30",
+      "time": "12.15",
       "cat": "u13",
       "gir": "A",
       "home": "Vasto",
@@ -1734,7 +1734,7 @@
     },
     {
       "date": "11/07",
-      "time": "12.00",
+      "time": "08.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chiaravalle",
@@ -1743,7 +1743,7 @@
     },
     {
       "date": "11/07",
-      "time": "08.30",
+      "time": "09.00",
       "cat": "u911",
       "gir": "B",
       "home": "Mugello",
@@ -1752,7 +1752,7 @@
     },
     {
       "date": "11/07",
-      "time": "09.00",
+      "time": "09.30",
       "cat": "u911",
       "gir": "B",
       "home": "Mestrino A",
@@ -1761,7 +1761,7 @@
     },
     {
       "date": "11/07",
-      "time": "09.30",
+      "time": "10.00",
       "cat": "u911",
       "gir": "B",
       "home": "Ferrara",
@@ -1769,8 +1769,8 @@
       "venue": "pim"
     },
     {
-      "date": "10/07",
-      "time": "17.00",
+      "date": "11/07",
+      "time": "10.30",
       "cat": "u911",
       "gir": "A",
       "home": "Scuola di Handball U11",
@@ -1779,7 +1779,7 @@
     },
     {
       "date": "11/07",
-      "time": "10.30",
+      "time": "11.00",
       "cat": "u911",
       "gir": "A",
       "home": "Mestrino B",
@@ -1788,7 +1788,7 @@
     },
     {
       "date": "11/07",
-      "time": "11.00",
+      "time": "11.30",
       "cat": "u911",
       "gir": "A",
       "home": "Petrarca U11",
@@ -1797,7 +1797,7 @@
     },
     {
       "date": "11/07",
-      "time": "11.30",
+      "time": "12.00",
       "cat": "u911",
       "gir": "A",
       "home": "Pressano A",
@@ -1806,7 +1806,7 @@
     },
     {
       "date": "11/07",
-      "time": "10.00",
+      "time": "12.30",
       "cat": "u911",
       "gir": "B",
       "home": "Chieti",
@@ -1815,7 +1815,7 @@
     },
     {
       "date": "11/07",
-      "time": "12.30",
+      "time": "13.00",
       "cat": "u911",
       "gir": "B",
       "home": "Cingoli B",
@@ -1824,7 +1824,7 @@
     },
     {
       "date": "11/07",
-      "time": "13.00",
+      "time": "14.30",
       "cat": "u911",
       "gir": "B",
       "home": "Pressano B",
@@ -1833,7 +1833,7 @@
     },
     {
       "date": "11/07",
-      "time": "14.30",
+      "time": "15.00",
       "cat": "u911",
       "gir": "B",
       "home": "Fondi",
