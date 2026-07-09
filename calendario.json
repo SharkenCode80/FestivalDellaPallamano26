@@ -1839,6 +1839,15 @@
       "home": "Fondi",
       "away": "Chiaravalle",
       "venue": "pim"
+    },
+    {
+      "date": "11/07",
+      "time": "09.30",
+      "cat": "u14m",
+      "gir": "semif21-24",
+      "home": "Fondi",
+      "away": "Avola",
+      "venue": "npm"
     }
   ]
 }
