@@ -1,5 +1,5 @@
 {
-  "updated": "09/07/2026 10:46",
+  "updated": "09/07/2026 12:53",
   "source": "federhandball.it (pagine competizione + live-ticker)",
   "results": [
     {
@@ -124,6 +124,22 @@
     },
     {
       "date": "08/07",
+      "home": "Pressano A",
+      "away": "Cingoli A",
+      "hs": 26,
+      "as": 13,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cingoli C",
+      "away": "Petrarca U11",
+      "hs": 9,
+      "as": 13,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Avola",
       "away": "Putignano",
       "hs": 10,
@@ -152,6 +168,22 @@
       "away": "Albatro",
       "hs": 21,
       "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Albatro U11",
+      "away": "Mestrino B",
+      "hs": 14,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Putignano",
+      "away": "Scuola di Handball U11",
+      "hs": 21,
+      "as": 8,
       "status": "FINE"
     },
     {
@@ -188,6 +220,22 @@
     },
     {
       "date": "08/07",
+      "home": "Fondi",
+      "away": "Mezzocorona",
+      "hs": 16,
+      "as": 4,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Chiaravalle",
+      "away": "Pressano B",
+      "hs": 20,
+      "as": 12,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Cingoli",
       "away": "Ariosto",
       "hs": 12,
@@ -220,6 +268,14 @@
     },
     {
       "date": "08/07",
+      "home": "Mugello",
+      "away": "Cingoli B",
+      "hs": 22,
+      "as": 8,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Brixen",
       "away": "Montecarlo",
       "hs": 27,
@@ -236,6 +292,14 @@
     },
     {
       "date": "08/07",
+      "home": "Mestrino A",
+      "away": "Chieti",
+      "hs": 13,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Oderzo",
       "away": "Sassari",
       "hs": 30,
@@ -247,6 +311,30 @@
       "home": "Spallanzani Casalgrande",
       "away": "Fondi",
       "hs": 24,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cingoli A",
+      "away": "Cus Cassino Gaeta",
+      "hs": 20,
+      "as": 14,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Scuola di Handball U11",
+      "away": "Albatro U11",
+      "hs": 8,
+      "as": 25,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Mestrino B",
+      "away": "Cingoli C",
+      "hs": 19,
       "as": 11,
       "status": "FINE"
     },
@@ -276,10 +364,26 @@
     },
     {
       "date": "08/07",
+      "home": "Petrarca U11",
+      "away": "Pressano A",
+      "hs": 5,
+      "as": 29,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Rapid Nonantola",
       "away": "Camerano",
       "hs": 20,
       "as": 29,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Mezzocorona",
+      "away": "Ferrara",
+      "hs": 7,
+      "as": 16,
       "status": "FINE"
     },
     {
@@ -316,6 +420,22 @@
     },
     {
       "date": "08/07",
+      "home": "Chieti",
+      "away": "Mugello",
+      "hs": 14,
+      "as": 14,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Cingoli B",
+      "away": "Chiaravalle",
+      "hs": 5,
+      "as": 22,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "29 Martiri",
       "away": "Vasto",
       "hs": 18,
@@ -348,6 +468,14 @@
     },
     {
       "date": "08/07",
+      "home": "Pressano B",
+      "away": "Fondi",
+      "hs": 13,
+      "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Fondi",
       "away": "Mestrino",
       "hs": 15,
@@ -372,10 +500,26 @@
     },
     {
       "date": "08/07",
+      "home": "Petrarca U11",
+      "away": "Cingoli A",
+      "hs": 5,
+      "as": 23,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Sassari",
       "away": "Leno",
       "hs": 5,
       "as": 30,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
+      "home": "Pressano A",
+      "away": "Mestrino B",
+      "hs": 22,
+      "as": 8,
       "status": "FINE"
     },
     {
@@ -396,6 +540,14 @@
     },
     {
       "date": "08/07",
+      "home": "Cingoli C",
+      "away": "Scuola di Handball U11",
+      "hs": 10,
+      "as": 17,
+      "status": "FINE"
+    },
+    {
+      "date": "08/07",
       "home": "Dossobuono",
       "away": "Camerano",
       "hs": 13,
@@ -409,6 +561,14 @@
       "hs": 1,
       "as": 4,
       "status": "LIVE"
+    },
+    {
+      "date": "08/07",
+      "home": "Putignano",
+      "away": "Cus Cassino Gaeta",
+      "hs": 25,
+      "as": 12,
+      "status": "FINE"
     },
     {
       "date": "09/07",
@@ -444,6 +604,22 @@
     },
     {
       "date": "09/07",
+      "home": "Pressano B",
+      "away": "Mezzocorona",
+      "hs": 15,
+      "as": 7,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Fondi",
+      "away": "Cingoli B",
+      "hs": 20,
+      "as": 4,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
       "home": "Cingoli",
       "away": "Avola",
       "hs": 19,
@@ -472,6 +648,46 @@
       "away": "Pressano",
       "hs": 7,
       "as": 11,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Chiaravalle",
+      "away": "Chieti",
+      "hs": 13,
+      "as": 15,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Mestrino A",
+      "away": "Ferrara",
+      "hs": 13,
+      "as": 25,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Cingoli A",
+      "away": "Putignano",
+      "hs": 14,
+      "as": 24,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Cus Cassino Gaeta",
+      "away": "Albatro U11",
+      "hs": 5,
+      "as": 23,
+      "status": "FINE"
+    },
+    {
+      "date": "09/07",
+      "home": "Scuola di Handball U11",
+      "away": "Pressano A",
+      "hs": 13,
+      "as": 25,
       "status": "FINE"
     }
   ]
