@@ -1841,13 +1841,22 @@
       "venue": "pim"
     },
     {
-      "date": "11/07",
+      "date": "10/07",
       "time": "09.30",
       "cat": "u14m",
       "gir": "semif21-24",
       "home": "Fondi",
       "away": "Avola",
       "venue": "npm"
+    },
+    {
+      "date": "10/07",
+      "time": "11.30",
+      "cat": "u14f",
+      "gir": "semif",
+      "home": "Fondi",
+      "away": "Marsala",
+      "venue": "pim"
     }
   ]
 }
