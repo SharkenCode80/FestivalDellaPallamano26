@@ -4,6 +4,7 @@
   "results": [
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Conversano",
       "away": "Vasto",
       "hs": 24,
@@ -12,6 +13,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Ferrarin",
       "away": "Crenna",
       "hs": 13,
@@ -20,6 +22,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Rapid Nonantola",
       "away": "Pressano",
       "hs": 13,
@@ -28,6 +31,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Albatro",
       "away": "Malo",
       "hs": 23,
@@ -36,6 +40,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Cassano Magnago",
       "away": "Merano",
       "hs": 16,
@@ -44,6 +49,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Putignano",
       "away": "Aretusa",
       "hs": 12,
@@ -52,6 +58,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Verona City",
       "away": "Camerano",
       "hs": 13,
@@ -60,6 +67,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Cingoli",
       "away": "Belluno",
       "hs": 14,
@@ -68,6 +76,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Cus Cassino Gaeta",
       "away": "Fondi",
       "hs": 9,
@@ -76,6 +85,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Kaltern",
       "away": "29 Martiri",
       "hs": 25,
@@ -84,6 +94,7 @@
     },
     {
       "date": "07/07",
+      "cat": "u14m",
       "home": "Verdazzurro",
       "away": "Imola",
       "hs": 12,
@@ -92,6 +103,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Aretusa",
       "away": "Cingoli",
       "hs": 17,
@@ -100,6 +112,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Camerano",
       "away": "Verdazzurro",
       "hs": 31,
@@ -108,6 +121,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Malo",
       "away": "Kaltern",
       "hs": 18,
@@ -116,6 +130,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Merano",
       "away": "Cus Cassino Gaeta",
       "hs": 26,
@@ -124,6 +139,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Pressano A",
       "away": "Cingoli A",
       "hs": 26,
@@ -132,6 +148,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Cingoli C",
       "away": "Petrarca U11",
       "hs": 9,
@@ -140,6 +157,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Avola",
       "away": "Putignano",
       "hs": 10,
@@ -148,6 +166,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Crenna",
       "away": "Cassano Magnago",
       "hs": 17,
@@ -156,6 +175,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Pressano",
       "away": "Verona City",
       "hs": 13,
@@ -164,6 +184,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Vasto",
       "away": "Albatro",
       "hs": 21,
@@ -172,6 +193,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Albatro U11",
       "away": "Mestrino B",
       "hs": 14,
@@ -180,6 +202,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Putignano",
       "away": "Scuola di Handball U11",
       "hs": 21,
@@ -188,6 +211,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "29 Martiri",
       "away": "Conversano",
       "hs": 15,
@@ -196,6 +220,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Belluno",
       "away": "Olimpic Massa M.",
       "hs": 24,
@@ -204,6 +229,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Fondi",
       "away": "Ferrarin",
       "hs": 19,
@@ -212,6 +238,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Imola",
       "away": "Rapid Nonantola",
       "hs": 17,
@@ -220,6 +247,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Fondi",
       "away": "Mezzocorona",
       "hs": 16,
@@ -228,6 +256,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Chiaravalle",
       "away": "Pressano B",
       "hs": 20,
@@ -236,6 +265,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Cingoli",
       "away": "Ariosto",
       "hs": 12,
@@ -244,6 +274,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Laugen",
       "away": "Dossobuono",
       "hs": 37,
@@ -252,6 +283,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Leno",
       "away": "Seiseralms",
       "hs": 11,
@@ -260,6 +292,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Mestrino",
       "away": "Cassano Magnago",
       "hs": 25,
@@ -268,6 +301,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Mugello",
       "away": "Cingoli B",
       "hs": 22,
@@ -276,6 +310,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Brixen",
       "away": "Montecarlo",
       "hs": 27,
@@ -284,6 +319,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Camerano",
       "away": "Marsala",
       "hs": 28,
@@ -292,6 +328,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Mestrino A",
       "away": "Chieti",
       "hs": 13,
@@ -300,6 +337,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Oderzo",
       "away": "Sassari",
       "hs": 30,
@@ -308,6 +346,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Spallanzani Casalgrande",
       "away": "Fondi",
       "hs": 24,
@@ -316,6 +355,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Cingoli A",
       "away": "Cus Cassino Gaeta",
       "hs": 20,
@@ -324,6 +364,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Scuola di Handball U11",
       "away": "Albatro U11",
       "hs": 8,
@@ -332,6 +373,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Mestrino B",
       "away": "Cingoli C",
       "hs": 19,
@@ -340,6 +382,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Conversano",
       "away": "Malo",
       "hs": 22,
@@ -348,6 +391,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Ferrarin",
       "away": "Merano",
       "hs": 16,
@@ -356,6 +400,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Olimpic Massa M.",
       "away": "Aretusa",
       "hs": 13,
@@ -364,6 +409,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Petrarca U11",
       "away": "Pressano A",
       "hs": 5,
@@ -372,6 +418,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Rapid Nonantola",
       "away": "Camerano",
       "hs": 20,
@@ -380,6 +427,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Mezzocorona",
       "away": "Ferrara",
       "hs": 7,
@@ -388,6 +436,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Cingoli",
       "away": "Putignano",
       "hs": 13,
@@ -396,6 +445,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Cus Cassino Gaeta",
       "away": "Cassano Magnago",
       "hs": 15,
@@ -404,6 +454,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Kaltern",
       "away": "Albatro",
       "hs": 19,
@@ -412,6 +463,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Verdazzurro",
       "away": "Verona City",
       "hs": 9,
@@ -420,6 +472,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Chieti",
       "away": "Mugello",
       "hs": 14,
@@ -428,6 +481,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Cingoli B",
       "away": "Chiaravalle",
       "hs": 5,
@@ -436,6 +490,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "29 Martiri",
       "away": "Vasto",
       "hs": 18,
@@ -444,6 +499,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Belluno",
       "away": "Avola",
       "hs": 19,
@@ -452,6 +508,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Fondi",
       "away": "Crenna",
       "hs": 18,
@@ -460,6 +517,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14m",
       "home": "Imola",
       "away": "Pressano",
       "hs": 10,
@@ -468,6 +526,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Pressano B",
       "away": "Fondi",
       "hs": 13,
@@ -476,6 +535,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Fondi",
       "away": "Mestrino",
       "hs": 15,
@@ -484,6 +544,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Marsala",
       "away": "Laugen",
       "hs": 16,
@@ -492,6 +553,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Montecarlo",
       "away": "Cingoli",
       "hs": 16,
@@ -500,6 +562,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Petrarca U11",
       "away": "Cingoli A",
       "hs": 5,
@@ -508,6 +571,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Sassari",
       "away": "Leno",
       "hs": 5,
@@ -516,6 +580,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Pressano A",
       "away": "Mestrino B",
       "hs": 22,
@@ -524,6 +589,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Ariosto",
       "away": "Brixen",
       "hs": 9,
@@ -532,6 +598,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Cassano Magnago",
       "away": "Spallanzani Casalgrande",
       "hs": 6,
@@ -540,6 +607,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Cingoli C",
       "away": "Scuola di Handball U11",
       "hs": 10,
@@ -548,6 +616,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Dossobuono",
       "away": "Camerano",
       "hs": 13,
@@ -556,6 +625,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u14f",
       "home": "Seiseralms",
       "away": "Oderzo",
       "hs": 1,
@@ -564,6 +634,7 @@
     },
     {
       "date": "08/07",
+      "cat": "u911",
       "home": "Putignano",
       "away": "Cus Cassino Gaeta",
       "hs": 25,
@@ -572,6 +643,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Aretusa",
       "away": "Belluno",
       "hs": 23,
@@ -580,6 +652,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Camerano",
       "away": "Imola",
       "hs": 24,
@@ -588,6 +661,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Malo",
       "away": "29 Martiri",
       "hs": 25,
@@ -596,6 +670,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Merano",
       "away": "Fondi",
       "hs": 23,
@@ -604,6 +679,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Pressano B",
       "away": "Mezzocorona",
       "hs": 15,
@@ -612,6 +688,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Fondi",
       "away": "Cingoli B",
       "hs": 20,
@@ -620,6 +697,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Cingoli",
       "away": "Avola",
       "hs": 19,
@@ -628,6 +706,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Cus Cassino Gaeta",
       "away": "Crenna",
       "hs": 7,
@@ -636,6 +715,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Kaltern",
       "away": "Vasto",
       "hs": 24,
@@ -644,6 +724,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u14m",
       "home": "Verdazzurro",
       "away": "Pressano",
       "hs": 7,
@@ -652,6 +733,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Chiaravalle",
       "away": "Chieti",
       "hs": 13,
@@ -660,6 +742,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Mestrino A",
       "away": "Ferrara",
       "hs": 13,
@@ -668,6 +751,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Cingoli A",
       "away": "Putignano",
       "hs": 14,
@@ -676,6 +760,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Cus Cassino Gaeta",
       "away": "Albatro U11",
       "hs": 5,
@@ -684,6 +769,7 @@
     },
     {
       "date": "09/07",
+      "cat": "u911",
       "home": "Scuola di Handball U11",
       "away": "Pressano A",
       "hs": 13,

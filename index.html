@@ -253,13 +253,13 @@ const shown = el => el.style.display !== "none";
 // normalizzazioni per far combaciare i nomi tra calendario e risultati
 const normTeam = s => (s||"").toUpperCase().replace(/\s+/g," ").trim();
 const normDate = s => (s||"").slice(0,5);            // "07/07/2026" -> "07/07"
-const resKey = (d,h,a) => normDate(d)+"|"+normTeam(h)+"|"+normTeam(a);
+const resKey = (d,c,h,a) => normDate(d)+"|"+(c||"")+"|"+normTeam(h)+"|"+normTeam(a);
 const midOf = m => `${normDate(m.date)}|${m.cat}|${normTeam(m.home)}|${normTeam(m.away)}`;
 
 function resultFor(m){
-  const r = RES[resKey(m.date,m.home,m.away)];
+  const r = RES[resKey(m.date,m.cat,m.home,m.away)];
   if(r) return {hs:+r.hs, as:+r.as, status:r.status};
-  const rr = RES[resKey(m.date,m.away,m.home)];       // fallback: ordine invertito
+  const rr = RES[resKey(m.date,m.cat,m.away,m.home)];   // fallback: ordine invertito
   if(rr) return {hs:+rr.as, as:+rr.hs, status:rr.status};
   return null;
 }
@@ -458,7 +458,7 @@ async function loadResults(){
     const res = await fetch("risultati.json", {cache:"no-store"});
     if(!res.ok) return null;
     const data = await res.json();
-    (data.results||[]).forEach(r=>{ RES[resKey(r.date,r.home,r.away)] = r; });
+    (data.results||[]).forEach(r=>{ RES[resKey(r.date,r.cat,r.home,r.away)] = r; });
     return data;
   }catch(_){ return null; }   // i risultati sono opzionali: se mancano, mostro solo il calendario
 }
