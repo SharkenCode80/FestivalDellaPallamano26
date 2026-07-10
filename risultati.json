@@ -1333,6 +1333,33 @@
       "hs": 13,
       "as": 25,
       "status": "FINE"
+    },
+    {
+      "date": "10/07",
+      "cat": "u13",
+      "home": "Fondi",
+      "away": "Fiorentina",
+      "hs": 10,
+      "as": 21,
+      "status": "Fine"
+    },
+    {
+      "date": "10/07",
+      "cat": "u14m",
+      "home": "Fondi",
+      "away": "Avola",
+      "hs": 24,
+      "as": 25,
+      "status": "Fine"
+    },
+    {
+      "date": "10/07",
+      "cat": "u911",
+      "home": "Ferrara",
+      "away": "Fondi",
+      "hs": 19,
+      "as": 10,
+      "status": "Fine"
     }
   ]
 }
