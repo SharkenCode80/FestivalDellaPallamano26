@@ -1360,6 +1360,15 @@
       "hs": 19,
       "as": 10,
       "status": "Fine"
+    },
+    {
+      "date": "10/07",
+      "cat": "u14f",
+      "home": "Fondi",
+      "away": "Marsala",
+      "hs": 12,
+      "as": 23,
+      "status": "Fine"
     }
   ]
 }
