@@ -27,9 +27,16 @@
     "u13": "U13",
     "u911": "U9-11"
   },
+  "venues": {
+    "npm": "Nuovo Pal. Misano",
+    "pm": "Palasport Misano",
+    "tm": "Tensostruttura Misano",
+    "pim": "Piastra Misano",
+    "pr": "Pattinodromo Riccione",
+    "pmp": "PalaMegabox Pesaro"
+  },
   "mister": {
     "buffer": 10,
-    "_nota": "Durata match = 2*tempo + pausa (minuti). buffer = minuti minimi tra la fine di una gara e l'inizio della successiva; sotto quella soglia sono considerate un possibile accavallamento.",
     "durate": {
       "u14m": {
         "tempo": 20,
@@ -48,14 +55,6 @@
         "pausa": 6
       }
     }
-  },
-  "venues": {
-    "npm": "Nuovo Pal. Misano",
-    "pm": "Palasport Misano",
-    "tm": "Tensostruttura Misano",
-    "pim": "Piastra Misano",
-    "pr": "Pattinodromo Riccione",
-    "pmp": "PalaMegabox Pesaro"
   },
   "matches": [
     {
@@ -1857,6 +1856,24 @@
       "home": "Fondi",
       "away": "Chiaravalle",
       "venue": "pim"
+    },
+    {
+      "date": "10/07",
+      "time": "17.00",
+      "cat": "u14m",
+      "gir": "Finale 23-24",
+      "home": "Fondi",
+      "away": "Verdazzurro",
+      "venue": "pm"
+    },
+    {
+      "date": "11/07",
+      "time": "09.30",
+      "cat": "u14f",
+      "gir": "Finale 15-16",
+      "home": "Sassari",
+      "away": "Fondi",
+      "venue": "pm"
     }
   ]
 }
