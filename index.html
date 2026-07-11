@@ -200,6 +200,7 @@
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+<style data-center-now>#grid tbody th.time.now-time{background:#12233f;color:#fff}#grid thead th.now-col{outline:3px solid #f2b705;outline-offset:-3px}#grid td.now-cell{box-shadow:inset 0 0 0 3px #f2b705}</style>
 </head>
 <body>
 <div class="wrap">
@@ -533,5 +534,55 @@ init();
 })();
 
 </script>
+<script data-center-now>(function(){
+  function toMin(t){ var p=String(t).trim().replace(":",".").split("."); return p.length>=2?((+p[0])*60+(+p[1])):NaN; }
+  function pad(n){ return (n<10?"0":"")+n; }
+  function todayStr(){ var d=new Date(); return pad(d.getDate())+"/"+pad(d.getMonth()+1); }
+  function key(s){ var p=String(s).split("/"); return p.length>=2?((+p[1])*100+(+p[0])):0; }
+  function clearMarks(g){
+    var t=g.querySelector(".now-time"); if(t) t.classList.remove("now-time");
+    g.querySelectorAll(".now-col").forEach(function(x){ x.classList.remove("now-col"); });
+    g.querySelectorAll(".now-cell").forEach(function(x){ x.classList.remove("now-cell"); });
+  }
+  function center(){
+    try{
+      var g=document.getElementById("grid"); if(!g) return false;
+      var board=g.closest(".board")||g.parentElement;
+      var rows=[].slice.call(g.querySelectorAll("tbody tr")).filter(function(tr){ return tr.offsetParent!==null; });
+      if(!rows.length) return false;
+      var cells=[].slice.call(g.querySelectorAll("td[data-day]")).filter(function(td){ return td.offsetParent!==null; });
+      if(!cells.length) return false;
+      var days=[]; cells.forEach(function(td){ if(days.indexOf(td.dataset.day)<0) days.push(td.dataset.day); });
+      var today=todayStr();
+      var day = days.indexOf(today)>=0 ? today : days.reduce(function(b,d){
+        return Math.abs(key(d)-key(today))<Math.abs(key(b)-key(today))?d:b; }, days[0]);
+      var now=(function(){ var d=new Date(); return d.getHours()*60+d.getMinutes(); })();
+      var timed=rows.map(function(tr){ var th=tr.querySelector("th.time"); return {tr:tr,min:th?toMin(th.textContent):NaN}; })
+                    .filter(function(x){ return !isNaN(x.min); });
+      if(!timed.length) return false;
+      var chosen=null; timed.forEach(function(x){ if(x.min<=now) chosen=x; });
+      var row = chosen?chosen.tr:timed[0].tr;
+      var cell=row.querySelector('td[data-day="'+day+'"]')||g.querySelector('td[data-day="'+day+'"]');
+      clearMarks(g);
+      var th=row.querySelector("th.time"); if(th) th.classList.add("now-time");
+      if(cell){
+        cell.classList.add("now-cell");
+        var kids=[].slice.call(row.children), ci=kids.indexOf(cell);
+        var head=g.querySelectorAll("thead th")[ci]; if(head) head.classList.add("now-col");
+        if(board && board.scrollWidth>board.clientWidth){
+          var cr=cell.getBoundingClientRect(), br=board.getBoundingClientRect();
+          board.scrollLeft += (cr.left-br.left)-(board.clientWidth/2)+(cr.width/2);
+        }
+      }
+      var rr=row.getBoundingClientRect(), y=rr.top+window.pageYOffset-(window.innerHeight/2)+(rr.height/2);
+      window.scrollTo({top:Math.max(0,y),behavior:"smooth"});
+      return true;
+    }catch(e){ return false; }
+  }
+  var n=0;
+  function attempt(){ if(center()) return; if(++n<30) setTimeout(attempt,150); }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",attempt); else attempt();
+  window.addEventListener("load", function(){ setTimeout(center,250); });
+})();</script>
 </body>
 </html>
