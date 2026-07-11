@@ -1414,6 +1414,15 @@
       "hs": 14,
       "as": 17,
       "status": "Fine"
+    },
+    {
+      "date": "11/07",
+      "cat": "u13",
+      "home": "Fondi",
+      "away": "Ferrara",
+      "hs": 16,
+      "as": 15,
+      "status": "Fine"
     }
   ]
 }
