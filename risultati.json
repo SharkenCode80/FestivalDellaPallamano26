@@ -1396,6 +1396,15 @@
       "hs": 18,
       "as": 9,
       "status": "Fine"
+    },
+    {
+      "date": "11/07",
+      "cat": "u911",
+      "home": "Mugello",
+      "away": "Fondi",
+      "hs": 15,
+      "as": 10,
+      "status": "Fine"
     }
   ]
 }
