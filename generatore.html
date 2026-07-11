@@ -258,6 +258,7 @@ async function getTemplate(){
 async function buildIndexHTML(standalone){
   let tpl = await getTemplate();
   tpl = injectRefresh(tpl, refreshMinutes());
+  tpl = injectCenter(tpl);
   if(!standalone) return tpl;
   const data = { "calendario.json": dataCal, "risultati.json": dataRis || {results:[]} };
   const shim =
@@ -636,6 +637,104 @@ function injectRefresh(html, minutes){
   const secs = Math.max(1, Math.round(minutes * 60));
   const tag = '<meta http-equiv="refresh" content="'+secs+'" data-auto-refresh>';
   return html.replace(/(<head[^>]*>)/i, '$1\n'+tag);
+}
+
+/* Script iniettato nell'index: centra la vista sul giorno di oggi e sull'orario in corso. */
+const CENTER_NOW_JS = `(function(){
+  var stop=false;
+  ["wheel","touchstart","keydown","mousedown"].forEach(function(ev){
+    window.addEventListener(ev, function(){ stop=true; }, {passive:true, once:true});
+  });
+  function toMin(t){ var p=String(t).trim().replace(":",".").split("."); return p.length>=2?((+p[0])*60+(+p[1])):NaN; }
+  function pad(n){ return (n<10?"0":"")+n; }
+  function todayStr(){ var d=new Date(); return pad(d.getDate())+"/"+pad(d.getMonth()+1); }
+  function key(s){ var p=String(s).split("/"); return p.length>=2?((+p[1])*100+(+p[0])):0; }
+  function clearMarks(g){
+    var t=g.querySelector(".now-time"); if(t) t.classList.remove("now-time");
+    g.querySelectorAll(".now-col").forEach(function(x){ x.classList.remove("now-col"); });
+    g.querySelectorAll(".now-cell").forEach(function(x){ x.classList.remove("now-cell"); });
+  }
+  function pick(){
+    var g=document.getElementById("grid"); if(!g) return null;
+    var board=g.closest(".board")||g.parentElement;
+    var rows=[].slice.call(g.querySelectorAll("tbody tr")).filter(function(tr){ return tr.offsetParent!==null; });
+    if(!rows.length) return null;
+    var cells=[].slice.call(g.querySelectorAll("td[data-day]")).filter(function(td){ return td.offsetParent!==null; });
+    if(!cells.length) return null;
+    var days=[]; cells.forEach(function(td){ if(days.indexOf(td.dataset.day)<0) days.push(td.dataset.day); });
+    var today=todayStr();
+    var day = days.indexOf(today)>=0 ? today : days.reduce(function(b,d){
+      return Math.abs(key(d)-key(today))<Math.abs(key(b)-key(today))?d:b; }, days[0]);
+    var now=(function(){ var d=new Date(); return d.getHours()*60+d.getMinutes(); })();
+    var timed=rows.map(function(tr){ var th=tr.querySelector("th.time"); return {tr:tr,min:th?toMin(th.textContent):NaN}; })
+                  .filter(function(x){ return !isNaN(x.min); });
+    if(!timed.length) return null;
+    var chosen=null; timed.forEach(function(x){ if(x.min<=now) chosen=x; });
+    var row = chosen?chosen.tr:timed[0].tr;
+    var cell=row.querySelector('td[data-day="'+day+'"]')||g.querySelector('td[data-day="'+day+'"]');
+    clearMarks(g);
+    var tth=row.querySelector("th.time"); if(tth) tth.classList.add("now-time");
+    if(cell){
+      cell.classList.add("now-cell");
+      var kids=[].slice.call(row.children), ci=kids.indexOf(cell);
+      var head=g.querySelectorAll("thead th")[ci]; if(head) head.classList.add("now-col");
+    }
+    return {g:g, board:board, row:row, cell:cell, day:day};
+  }
+  function center(){
+    try{
+      var p=pick(); if(!p) return false;
+      var g=p.g, board=p.board, row=p.row;
+      var target=p.cell||g.querySelector('td[data-day="'+p.day+'"]');
+      // orizzontale nella board, tenendo conto della colonna oraria "congelata" a sinistra
+      if(board && target && board.scrollWidth > board.clientWidth+1){
+        var br=board.getBoundingClientRect();
+        var stEl=row.querySelector("th.time");
+        var stW=stEl?stEl.getBoundingClientRect().width:0;
+        var tr=target.getBoundingClientRect();
+        var cur=(tr.left-br.left)+tr.width/2;                 // centro cella nella board
+        var want=stW+(board.clientWidth-stW)/2;               // centro area visibile utile
+        board.scrollLeft += (cur-want);
+      }
+      // verticale DENTRO la board: la tabella scorre qui (max-height/overflow), non nella finestra
+      var head=g.querySelector("thead");
+      var hH=head?head.getBoundingClientRect().height:0;
+      if(board){
+        var bRect=board.getBoundingClientRect();
+        if(board.scrollHeight > board.clientHeight+1){
+          var rr=row.getBoundingClientRect();
+          var curV=(rr.top-bRect.top)+rr.height/2;              // centro riga nel riquadro
+          var wantV=hH+(board.clientHeight-hH)/2;               // centro area visibile sotto l'header
+          board.scrollTop += (curV-wantV);
+        }
+        // porta il riquadro al centro della finestra (senza combattere lo scroll interno)
+        var bc=board.getBoundingClientRect();
+        window.scrollBy(0, bc.top + bc.height/2 - window.innerHeight/2);
+      }
+      return true;
+    }catch(e){ return false; }
+  }
+  function reschedule(){ [250,700,1500].forEach(function(d){ setTimeout(function(){ if(!stop) center(); }, d); }); }
+  var n=0;
+  function attempt(){
+    if(stop) return;
+    if(center()){ reschedule(); return; }
+    if(++n<40) setTimeout(attempt,120);
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",attempt); else attempt();
+  window.addEventListener("load", function(){ if(!stop) setTimeout(center,300); });
+})();`;
+
+function injectCenter(html){
+  if(/data-center-now/.test(html)) return html;   // idempotente
+  const css = '<style data-center-now>'
+    + '#grid tbody th.time.now-time{background:#12233f;color:#fff}'
+    + '#grid thead th.now-col{outline:3px solid #f2b705;outline-offset:-3px}'
+    + '#grid td.now-cell{box-shadow:inset 0 0 0 3px #f2b705}'
+    + '</style>';
+  html = html.replace(/<\/head>/i, css + '\n</head>');
+  html = html.replace(/<\/body>/i, '<script data-center-now>' + CENTER_NOW_JS + '<\/script>\n</body>');
+  return html;
 }
 
 /* ---------- Aggiunta manuale di partite e risultati ---------- */
