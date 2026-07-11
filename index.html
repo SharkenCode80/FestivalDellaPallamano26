@@ -200,7 +200,7 @@
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-<style data-center-now>#grid tbody th.time.now-time{background:#12233f;color:#fff}#grid thead th.now-col{outline:3px solid #f2b705;outline-offset:-3px}#grid td.now-cell{box-shadow:inset 0 0 0 3px #f2b705}</style>
+<style data-center-now>#grid tbody th.time.now-time{background:#12233f;color:#fff}#grid thead th.now-col{outline:3px solid #f2b705;outline-offset:-3px}#grid td.now-cell{box-shadow:inset 0 0 0 3px #f2b705}#grid .m .now-badge{display:inline-block;margin-top:4px;font-family:"Inter",sans-serif;font-weight:700;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:#f2b705;color:#3a2c00}#grid td.now-cell .now-empty{font-family:"Inter",sans-serif;font-weight:700;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#8a6d00;text-align:center;padding:6px 2px}</style>
 </head>
 <body>
 <div class="wrap">
@@ -547,6 +547,7 @@ init();
     var t=g.querySelector(".now-time"); if(t) t.classList.remove("now-time");
     g.querySelectorAll(".now-col").forEach(function(x){ x.classList.remove("now-col"); });
     g.querySelectorAll(".now-cell").forEach(function(x){ x.classList.remove("now-cell"); });
+    g.querySelectorAll(".now-badge, .now-empty").forEach(function(x){ x.parentNode && x.parentNode.removeChild(x); });
   }
   function pick(){
     var g=document.getElementById("grid"); if(!g) return null;
@@ -572,6 +573,16 @@ init();
       cell.classList.add("now-cell");
       var kids=[].slice.call(row.children), ci=kids.indexOf(cell);
       var head=g.querySelectorAll("thead th")[ci]; if(head) head.classList.add("now-col");
+      var ms=[].slice.call(cell.querySelectorAll(".m")).filter(function(el){ return el.offsetParent!==null; });
+      if(ms.length){
+        ms.forEach(function(el){
+          if(!el.querySelector(".now-badge")){
+            var b=document.createElement("span"); b.className="now-badge"; b.textContent="in corso"; el.appendChild(b);
+          }
+        });
+      } else if(!cell.querySelector(".now-empty")){
+        var e=document.createElement("div"); e.className="now-empty"; e.textContent="in corso"; cell.appendChild(e);
+      }
     }
     return {g:g, board:board, row:row, cell:cell, day:day};
   }
