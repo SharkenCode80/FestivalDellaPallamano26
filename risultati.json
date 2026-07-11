@@ -1423,6 +1423,15 @@
       "hs": 16,
       "as": 15,
       "status": "Fine"
+    },
+    {
+      "date": "11/07",
+      "cat": "u911",
+      "home": "Fondi",
+      "away": "Chiaravalle",
+      "hs": 12,
+      "as": 16,
+      "status": "Fine"
     }
   ]
 }
