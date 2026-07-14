@@ -259,6 +259,7 @@ async function buildIndexHTML(standalone){
   let tpl = await getTemplate();
   tpl = injectRefresh(tpl, refreshMinutes());
   tpl = injectCenter(tpl);
+  tpl = injectComp(tpl, dataCal);
   if(!standalone) return tpl;
   const data = { "calendario.json": dataCal, "risultati.json": dataRis || {results:[]} };
   const shim =
@@ -314,6 +315,17 @@ function table(ws){
   return out;
 }
 
+function dkey(s){ const p=String(s||"").split("/"); return p.length>=2 ? ((+p[1])*100+(+p[0])) : NaN; }
+function yearOf(s){ const p=String(s||"").split("/"); return (p.length>=3 && /^\d{4}$/.test(p[2])) ? +p[2] : null; }
+function ddmm(s){ const p=String(s||"").split("/"); return (p.length>=2 && p[0] && p[1]) ? (String(p[0]).padStart(2,"0")+"/"+String(p[1]).padStart(2,"0")) : ""; }
+function withYear(s, y){ const dm=ddmm(s); return (dm && y) ? (dm+"/"+y) : dm; }
+function rangeOf(dates){
+  const ks = (dates||[]).map(d=>({d:normDate(d), k:dkey(normDate(d))})).filter(x=>x.d && !isNaN(x.k));
+  if(!ks.length) return { start:"", end:"" };
+  let mn=ks[0], mx=ks[0];
+  ks.forEach(x=>{ if(x.k<mn.k) mn=x; if(x.k>mx.k) mx=x; });
+  return { start:mn.d, end:mx.d };
+}
 function buildCalendario(wb){
   const ev = kv(getSheet(wb, "Evento"));
   const cats = table(getSheet(wb, "Categorie"));
@@ -339,10 +351,16 @@ function buildCalendario(wb){
     gir: norm(p.girone), home: norm(p.casa), away: norm(p.ospite), venue: norm(p.sede)
   })).filter(m => m.date && m.home && m.away);
 
+  const auto = rangeOf(days.length ? days : matches.map(m=>m.date));
+  const year = num(ev.anno) || yearOf(ev.data_inizio) || yearOf(ev.data_fine) || (new Date().getFullYear());
+  const start = withYear(ddmm(ev.data_inizio) || auto.start, year);
+  const end   = withYear(ddmm(ev.data_fine)   || auto.end,   year);
+
   return {
     event: { title:ev.titolo||"", eyebrow:ev.occhiello||"", subtitle:ev.sottotitolo||"",
              source:ev.fonte||"", updated:ev.aggiornato||"" },
     fondiTeam: ev.squadra_evidenziata || "",
+    year, start, end,
     days, dow, categories, venues,
     mister: { buffer: num(ev.buffer_minuti) ?? 10, durate },
     matches
@@ -427,18 +445,25 @@ function process(kind, file){
 function normalizeCal(o){
   o = o || {};
   const m = (o.mister && typeof o.mister === "object") ? o.mister : {};
+  const days = Array.isArray(o.days) ? o.days.slice() : [];
+  const matches = Array.isArray(o.matches) ? o.matches.map(x=>({
+      date:norm(x.date), time:norm(x.time), cat:norm(x.cat), gir:norm(x.gir),
+      home:norm(x.home), away:norm(x.away), venue:norm(x.venue)
+    })) : [];
+  const auto = rangeOf(days.length ? days : matches.map(x=>x.date));
+  const year = num(o.year) || yearOf(o.start) || yearOf(o.end) || (new Date().getFullYear());
+  const start = withYear(ddmm(o.start) || auto.start, year);   // usa quelli nel JSON, altrimenti li ricava
+  const end   = withYear(ddmm(o.end)   || auto.end,   year);
   return {
     event: o.event || {title:"",eyebrow:"",subtitle:"",source:"",updated:""},
     fondiTeam: o.fondiTeam || "",
-    days: Array.isArray(o.days) ? o.days.slice() : [],
+    year, start, end,
+    days,
     dow: o.dow || {},
     categories: o.categories || {},
     venues: o.venues || {},
     mister: { buffer: (m.buffer != null) ? m.buffer : 10, durate: m.durate || {} },
-    matches: Array.isArray(o.matches) ? o.matches.map(x=>({
-      date:norm(x.date), time:norm(x.time), cat:norm(x.cat), gir:norm(x.gir),
-      home:norm(x.home), away:norm(x.away), venue:norm(x.venue)
-    })) : []
+    matches
   };
 }
 function normalizeRis(o){
@@ -530,6 +555,9 @@ function calToWorkbook(){
     ["aggiornato", ev.updated||""],
     ["squadra_evidenziata", dataCal.fondiTeam||""],
     ["buffer_minuti", (dataCal.mister && dataCal.mister.buffer!=null) ? dataCal.mister.buffer : 10],
+    ["anno", dataCal.year||""],
+    ["data_inizio", dataCal.start||""],
+    ["data_fine", dataCal.end||""],
   ]), "Evento");
   const dur = (dataCal.mister && dataCal.mister.durate) || {};
   const catAoa = [["codice","etichetta","tempo","pausa"]];
@@ -655,6 +683,47 @@ const CENTER_NOW_JS = `(function(){
     g.querySelectorAll(".now-cell").forEach(function(x){ x.classList.remove("now-cell"); });
     g.querySelectorAll(".now-badge, .now-empty").forEach(function(x){ x.parentNode && x.parentNode.removeChild(x); });
   }
+  function eventDays(cells){
+    try{ if(typeof DAYS!=="undefined" && DAYS && DAYS.length) return DAYS.slice(); }catch(e){}
+    var ds=[]; cells.forEach(function(td){ if(ds.indexOf(td.dataset.day)<0) ds.push(td.dataset.day); }); return ds;
+  }
+  function dparse(s){ var p=String(s).split("/"); var y=(p.length>=3 && p[2] && p[2].length===4 && !isNaN(+p[2])) ? (+p[2]) : null;
+    if(p.length>=2) return {d:+p[0],m:+p[1],y:y}; return null; }
+  function dnum(o,ym){ if(!o) return NaN; return ym ? (o.y*10000+o.m*100+o.d) : (o.m*100+o.d); }
+  function compRange(cells){
+    // intervallo competizione: date esplicite dal JSON (con anno se presente), poi min/max dei giorni
+    try{ var C=window.__COMP__; if(C && C.start && C.end){ var a=dparse(C.start), b=dparse(C.end);
+      if(a && b){ var ym=(a.y!=null && b.y!=null); var ak=dnum(a,ym), bk=dnum(b,ym);
+        if(!isNaN(ak)&&!isNaN(bk)) return { start:Math.min(ak,bk), end:Math.max(ak,bk), ym:ym }; } } }catch(e){}
+    var ds=eventDays(cells); if(!ds.length) return null;
+    var ks=ds.map(function(d){ return dnum(dparse(d),false); }).filter(function(v){ return !isNaN(v)&&v>0; });
+    if(!ks.length) return null;
+    return { start:Math.min.apply(null,ks), end:Math.max.apply(null,ks), ym:false };
+  }
+  function dayWindow(day){
+    // finestra del giorno: [inizio prima partita, fine ultima partita] in minuti
+    try{
+      if(typeof D!=="undefined" && D && D.length){
+        var st=[], en=[];
+        D.forEach(function(m){
+          if(m.date!==day) return;
+          var s=toMin(m.time); if(isNaN(s)) return;
+          var dur=(typeof getDur==="function")?getDur(m.cat):60; if(!isFinite(dur)) dur=60;
+          st.push(s); en.push(s+dur);
+        });
+        if(st.length) return { start:Math.min.apply(null,st), end:Math.max.apply(null,en) };
+        return null;
+      }
+    }catch(e){}
+    // fallback dal DOM: righe con almeno una partita in quel giorno (+60' come stima di fine)
+    var g=document.getElementById("grid"); var mins=[];
+    [].slice.call(g.querySelectorAll("tbody tr")).forEach(function(tr){
+      var c=tr.querySelector('td[data-day="'+day+'"]');
+      if(c && c.querySelector(".m")){ var th=tr.querySelector("th.time"); var mm=th?toMin(th.textContent):NaN; if(!isNaN(mm)) mins.push(mm); }
+    });
+    if(!mins.length) return null;
+    return { start:Math.min.apply(null,mins), end:Math.max.apply(null,mins)+60 };
+  }
   function pick(){
     var g=document.getElementById("grid"); if(!g) return null;
     var board=g.closest(".board")||g.parentElement;
@@ -662,16 +731,24 @@ const CENTER_NOW_JS = `(function(){
     if(!rows.length) return null;
     var cells=[].slice.call(g.querySelectorAll("td[data-day]")).filter(function(td){ return td.offsetParent!==null; });
     if(!cells.length) return null;
-    var days=[]; cells.forEach(function(td){ if(days.indexOf(td.dataset.day)<0) days.push(td.dataset.day); });
     var today=todayStr();
-    var day = days.indexOf(today)>=0 ? today : days.reduce(function(b,d){
-      return Math.abs(key(d)-key(today))<Math.abs(key(b)-key(today))?d:b; }, days[0]);
+    var cr=compRange(cells);
+    var _n=new Date();
+    var tk = cr ? (cr.ym ? (_n.getFullYear()*10000+(_n.getMonth()+1)*100+_n.getDate())
+                         : ((_n.getMonth()+1)*100+_n.getDate())) : NaN;
+    // fuori dall'intervallo [inizio, fine] competizione (estremi inclusi) -> nessuna selezione
+    if(!cr || isNaN(tk) || tk < cr.start || tk > cr.end){ clearMarks(g); return {none:true}; }
+    var day=today;
     var now=(function(){ var d=new Date(); return d.getHours()*60+d.getMinutes(); })();
+    // fuori dalla finestra oraria del giorno (prima dell'inizio o dopo la fine dell'ultima) -> nessuna selezione
+    var win=dayWindow(day);
+    if(!win || now < win.start || now > win.end){ clearMarks(g); return {none:true}; }
     var timed=rows.map(function(tr){ var th=tr.querySelector("th.time"); return {tr:tr,min:th?toMin(th.textContent):NaN}; })
                   .filter(function(x){ return !isNaN(x.min); });
-    if(!timed.length) return null;
+    if(!timed.length){ clearMarks(g); return {none:true}; }
     var chosen=null; timed.forEach(function(x){ if(x.min<=now) chosen=x; });
-    var row = chosen?chosen.tr:timed[0].tr;
+    if(!chosen){ clearMarks(g); return {none:true}; }
+    var row=chosen.tr;
     var cell=row.querySelector('td[data-day="'+day+'"]')||g.querySelector('td[data-day="'+day+'"]');
     clearMarks(g);
     var tth=row.querySelector("th.time"); if(tth) tth.classList.add("now-time");
@@ -694,7 +771,9 @@ const CENTER_NOW_JS = `(function(){
   }
   function center(){
     try{
-      var p=pick(); if(!p) return false;
+      var p=pick();
+      if(p===null) return null;      // griglia non pronta: riprova
+      if(p.none) return false;       // pronta ma nessuna selezione: stop, nessuno scroll
       var g=p.g, board=p.board, row=p.row;
       var target=p.cell||g.querySelector('td[data-day="'+p.day+'"]');
       // orizzontale nella board, tenendo conto della colonna oraria "congelata" a sinistra
@@ -723,14 +802,16 @@ const CENTER_NOW_JS = `(function(){
         window.scrollBy(0, bc.top + bc.height/2 - window.innerHeight/2);
       }
       return true;
-    }catch(e){ return false; }
+    }catch(e){ return null; }
   }
   function reschedule(){ [250,700,1500].forEach(function(d){ setTimeout(function(){ if(!stop) center(); }, d); }); }
   var n=0;
   function attempt(){
     if(stop) return;
-    if(center()){ reschedule(); return; }
-    if(++n<40) setTimeout(attempt,120);
+    var st=center();
+    if(st===true){ reschedule(); return; }   // selezionato: ritocca dopo il reflow
+    if(st===false) return;                    // nessuna selezione: fermati
+    if(++n<40) setTimeout(attempt,120);       // non pronta: riprova
   }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",attempt); else attempt();
   window.addEventListener("load", function(){ if(!stop) setTimeout(center,300); });
@@ -747,10 +828,24 @@ function injectCenter(html){
     + 'background:#f2b705;color:#3a2c00}'
     + '#grid td.now-cell .now-empty{font-family:"Inter",sans-serif;font-weight:700;font-size:10px;'
     + 'letter-spacing:.08em;text-transform:uppercase;color:#8a6d00;text-align:center;padding:6px 2px}'
+    + '#grid td.now-cell .empty{display:none}'
     + '</style>';
   html = html.replace(/<\/head>/i, css + '\n</head>');
   html = html.replace(/<\/body>/i, '<script data-center-now>' + CENTER_NOW_JS + '<\/script>\n</body>');
   return html;
+}
+
+/* Inietta nell'index le date di inizio/fine competizione (dal calendario.json). */
+function injectComp(html, cal){
+  if(/data-comp-range/.test(html)) return html;   // idempotente
+  cal = cal || {};
+  const days = Array.isArray(cal.days) ? cal.days : [];
+  const auto = rangeOf(days.length ? days : (Array.isArray(cal.matches) ? cal.matches.map(m=>m.date) : []));
+  const year = num(cal.year) || yearOf(cal.start) || yearOf(cal.end) || (new Date().getFullYear());
+  const start = withYear(ddmm(cal.start) || auto.start, year);
+  const end   = withYear(ddmm(cal.end)   || auto.end,   year);
+  const js = '<script data-comp-range>window.__COMP__={start:' + JSON.stringify(start) + ',end:' + JSON.stringify(end) + ',year:' + JSON.stringify(year) + '};<\/script>';
+  return html.replace(/<\/head>/i, js + '\n</head>');
 }
 
 /* ---------- Aggiunta manuale di partite e risultati ---------- */
